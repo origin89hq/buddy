@@ -1,0 +1,112 @@
+[
+  {
+    "adapter": "victron-mppt",
+    "family": "BlueSolar MPPT",
+    "url": "https://www.victronenergy.com/media/pg/Manual_BlueSolar_MPPT_75-10_up_to_100-20/en/technical-specifications.html"
+  },
+  {
+    "adapter": "victron-mppt",
+    "family": "SmartSolar MPPT",
+    "url": "https://www.victronenergy.com/media/pg/Manual_SmartSolar_MPPT_75-10_up_to_100-20/en/technical-specifications.html"
+  },
+  {
+    "adapter": "victron-mppt",
+    "family": "SmartSolar MPPT",
+    "url": "https://www.victronenergy.com/media/pg/Manual_SmartSolar_MPPT_150-60_up_to_250-70/en/technical-specifications.html"
+  },
+  {
+    "adapter": "victron-mppt",
+    "family": "SmartSolar MPPT",
+    "variant": "VE.Can",
+    "url": "https://www.victronenergy.com/media/pg/Manual_SmartSolar_MPPT_150-70_up_to_250-100_VE.Can/en/technical-specifications.html"
+  },
+  {
+    "adapter": "victron-mppt",
+    "family": "BlueSolar MPPT",
+    "variant": "VE.Can",
+    "url": "https://www.victronenergy.com/media/pg/Manual_BlueSolar_MPPT_150-70_up_to_250-100_VE.Can/en/technical-specifications.html"
+  },
+  {
+    "adapter": "epever-inverter",
+    "family": "IPower Plus",
+    "url": "https://www.epever.com/wp-content/uploads/2021/05/IPower-Plus-Manual-EN-V3.3.pdf"
+  },
+  {
+    "adapter": "epever-inverter",
+    "family": "IPower",
+    "url": "https://www.epever.com/upload/file/2107/EPEVER-Datasheet_IPower-220V.pdf"
+  },
+  {
+    "adapter": "epever-mppt",
+    "family": "Tracer AN",
+    "revision": "V3.1",
+    "url": "https://www.epever.com/wp-content/uploads/2021/05/Tracer-AN50-100A-Manual-EN-V3.1.pdf"
+  },
+  {
+    "adapter": "epever-mppt",
+    "family": "XTRA N",
+    "revision": "V4.5 ETL",
+    "url": "https://www.epever.com/wp-content/uploads/2021/04/XTRA-N-Manual-EN-V4.5ETL.pdf"
+  },
+  {
+    "adapter": "epever-mppt",
+    "family": "DuoRacer",
+    "revision": "V2.5",
+    "localPath": "docs/vendor/epever-duoracer-manual-v2.5.pdf",
+    "url": "https://www.epever.com/wp-content/uploads/2021/05/DuoRacer-Manual-EN-V2.5.pdf"
+  },
+  {
+    "adapter": "epever-mppt",
+    "family": "XTRA N G3",
+    "revision": "V1.8",
+    "localPath": "docs/vendor/epever-xtra-n-g3-manual-v1.8.pdf",
+    "url": "https://www.epever.com/wp-content/uploads/2024/01/XTRA-N-G3-BLE-Manual-EN-V1.8.pdf"
+  },
+  {
+    "adapter": "smartshunt",
+    "family": "SmartShunt IP21",
+    "url": "https://www.victronenergy.com/media/pg/SmartShunt/en/technical-data.html"
+  },
+  {
+    "adapter": "discover",
+    "family": "battery",
+    "model": "42-48-6650",
+    "url": "https://discoverbattery.com/products/search/42-48-6650",
+    "note": "Reviewed model URL; the family listings behind discoverbattery.com are a browser-side search and do not link every model."
+  },
+  {
+    "adapter": "discover",
+    "family": "battery",
+    "model": "44-24-2800",
+    "url": "https://discoverbattery.com/products/search/44-24-2800",
+    "note": "Reviewed model URL; the family listings behind discoverbattery.com are a browser-side search and do not link every model."
+  },
+  {
+    "adapter": "solark",
+    "family": "Limitless 12K",
+    "model": "12K-2P-LL",
+    "url": "https://sol-ark.com/wp-content/uploads/2026/05/12K-2P-LL_Datasheet_Rev3_PS-00045_14July2026.pdf"
+  },
+  {
+    "adapter": "solark",
+    "family": "Whole Home 15K",
+    "model": "15K-2P-LV",
+    "url": "https://sol-ark.com/wp-content/uploads/2024/06/15K-2P-LV_Datasheet_Rev_7_16July2026.pdf"
+  },
+  {
+    "adapter": "solark",
+    "family": "Premium 18K",
+    "model": "18K-2P-LV",
+    "url": "https://sol-ark.com/wp-content/uploads/2025/09/18KDatasheet_PS-00036_Rev_7_15July2026.pdf"
+  },
+  {
+    "adapter": "outback",
+    "family": "FXR/VFXR A series (60 Hz)",
+    "url": "https://outbackpower.com/downloads/documents/inverter_chargers/fxr_vfxr_a/FXR_A_specsheet.pdf"
+  },
+  {
+    "adapter": "schneider",
+    "family": "Conext XW Pro",
+    "url": "https://solar.se.com/us/wp-content/uploads/sites/7/2021/10/XW-Pro-UL-Datasheet.pdf"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "id": "cec-batteries",
+  "checkedAt": "2026-09-08",
+  "url": "https://solarequipment.energy.ca.gov/Home/BatteryList",
+  "downloadUrl": "https://solarequipment.energy.ca.gov/Home/DownloadtoExcel?filename=BatteryList",
+  "sha256": "11fcf434ade5da0fa4b46bc322fcab2e4d658ff4ea29a21e1585ec6493d30dde",
+  "bytes": 116386,
+  "worksheet": "Battery",
+  "dataRevision": "2026-09-01",
+  "dataNotice": "Data has not changed since September 1, 2026",
+  "expectedRows": 980,
+  "webCountObserved": 979,
+  "countDiscrepancy": "Excel contains 980 physical records while the web page reports 979. The first export record is Alpha ESS SMILE-BAT-8.2PHA, absent from the inspected first web page. No certification-currentness claim is made.",
+  "termsUrl": "https://www.energy.ca.gov/conditions-of-use",
+  "reuse": "CEC provides many publicly compiled materials for reuse with credit, but its terms separately restrict third-party materials. Preserve attribution; bulk commercial redistribution permission is not established."
+}

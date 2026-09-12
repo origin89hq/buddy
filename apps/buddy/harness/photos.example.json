@@ -1,0 +1,65 @@
+{
+  "name": "Cottage installation: progressive onboarding",
+  "models": [
+    "openai/gpt-5.6-terra",
+    "openai/gpt-5.6-sol",
+    "@cf/qwen/qwen3.8-27b",
+    "@cf/moondream/moondream3.1-9B-A2B"
+  ],
+  "rounds": [
+    {
+      "id": "solar-board",
+      "photos": ["/private/path/solar-board.png"],
+      "expect": {
+        "kinds": ["charge-controller", "monitor", "distribution"],
+        "models": {
+          "charge-controller": "XTRA4210N"
+        },
+        "nextQuestion": "inverter",
+        "unknownFacts": [
+          "battery_voltage",
+          "battery_capacity",
+          "battery_chemistry",
+          "panel_wiring"
+        ]
+      }
+    },
+    {
+      "id": "inverter-and-wide-view",
+      "photos": ["/private/path/inverter.jpg", "/private/path/wide-view.jpg"],
+      "expect": {
+        "kinds": ["inverter", "charger", "pump"],
+        "singleEntryKinds": ["charge-controller", "inverter"],
+        "nextQuestion": "battery",
+        "unknownFacts": [
+          "battery_voltage",
+          "battery_capacity",
+          "battery_chemistry",
+          "panel_wiring"
+        ]
+      }
+    },
+    {
+      "id": "battery-bank",
+      "photos": ["/private/path/battery-bank.png"],
+      "expect": {
+        "kinds": ["battery"],
+        "quantities": {
+          "battery": 6
+        },
+        "unknownModels": ["battery"],
+        "nextQuestion": "model:",
+        "unknownFacts": [
+          "battery_voltage",
+          "battery_capacity",
+          "battery_chemistry",
+          "panel_wiring"
+        ]
+      }
+    }
+  ],
+  "targetMs": 10000,
+  "setupBudgetUsd": 0.25,
+  "plannedTurns": 12,
+  "retryAllowance": 2
+}

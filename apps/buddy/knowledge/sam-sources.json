@@ -1,0 +1,27 @@
+{
+  "id": "sam-cec",
+  "adapterVersion": 1,
+  "checkedAt": "2026-09-08",
+  "commit": "6ef6c5b2e42b202cee73582ae8ac74e830fff495",
+  "repository": "https://github.com/NatLabRockies/SAM",
+  "files": [
+    {
+      "name": "CEC Modules.csv",
+      "sha256": "a28cf8956a839ed98bb941809b439e4907f5b4c237bd9299bc123fb502c29aff",
+      "bytes": 6274198,
+      "data_rows": 21677,
+      "kind": "solar-panel"
+    },
+    {
+      "name": "CEC Inverters.csv",
+      "sha256": "0c1b2188415dad6928f91f1a4c9a820dadc80962549f903d57d9282ba3753760",
+      "bytes": 389761,
+      "data_rows": 2343,
+      "kind": "inverter"
+    }
+  ],
+  "license": {
+    "path": "LICENSE",
+    "sha256": "22b6f0585f60c136d6d3d196acf1cea2e69b9d84ac860125f9401960a7ef5a14"
+  }
+}

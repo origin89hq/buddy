@@ -1,0 +1,4 @@
+# Rendered guides carry PDF streams, not reviewable source text.
+*.pdf binary
+# Preserve exact source-table fixture bytes.
+apps/buddy/test/fixtures/manufacturers/*.html -whitespace

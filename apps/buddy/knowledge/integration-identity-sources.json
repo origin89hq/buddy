@@ -1,0 +1,30 @@
+{
+  "id": "integration-identity",
+  "checkedAt": "2026-09-08",
+  "sources": {
+    "victron-battery-compatibility": {
+      "url": "https://www.victronenergy.com/live/battery_compatibility:start",
+      "file": "2c9fbc81cb146b038600546e62927e97783895bbd7009d8e7c0bc75d862e10dc.html",
+      "sha256": "2c9fbc81cb146b038600546e62927e97783895bbd7009d8e7c0bc75d862e10dc",
+      "bytes": 27491
+    },
+    "victron-modbus-registers": {
+      "url": "https://github.com/victronenergy/dbus_modbustcp/raw/master/CCGX-Modbus-TCP-register-list.xlsx",
+      "file": "ef5fcaa39fc2798ea088031c351326519f50ccb9008064b70ae72b825217b2e9.xlsx",
+      "sha256": "ef5fcaa39fc2798ea088031c351326519f50ccb9008064b70ae72b825217b2e9",
+      "bytes": 77416
+    },
+    "solar-assistant-devices": {
+      "url": "https://solar-assistant.io/help/",
+      "file": "9da1bf6242a1748e2b1af8b48c3a3c1d2c57ebcef62ee1ce7cabfac6ed0529e1.html",
+      "sha256": "9da1bf6242a1748e2b1af8b48c3a3c1d2c57ebcef62ee1ce7cabfac6ed0529e1",
+      "bytes": 40887
+    },
+    "dbus-serialbattery-bms": {
+      "url": "https://mr-manuel.github.io/venus-os_dbus-serialbattery_docs/general/supported-bms",
+      "file": "d101d0db339a00adabdc75f7679aa98f7cb8d93128acc4f4e6b8142029e193b4.html",
+      "sha256": "d101d0db339a00adabdc75f7679aa98f7cb8d93128acc4f4e6b8142029e193b4",
+      "bytes": 46269
+    }
+  }
+}

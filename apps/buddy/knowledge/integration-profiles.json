@@ -1,0 +1,334 @@
+{
+  "passive-lead-acid": {
+    "status": "passive",
+    "driver": null,
+    "ports": [],
+    "availableMetrics": [],
+    "implementedMetrics": [],
+    "monitoringOptions": [
+      {
+        "brand": "Victron Energy",
+        "model": "SmartShunt 300A",
+        "purpose": "Candidate for bidirectional bank current, consumed Ah and estimated state of charge.",
+        "limitations": "Origin89 integration pending. Verify installed bank voltage (6.5\u201370 V), maximum current including surges, monitoring mode and capacity configuration before selecting a rating."
+      },
+      {
+        "brand": "Peacefair",
+        "model": "PZEM-017",
+        "purpose": "Directional DC voltage, current and power monitoring on a suitable circuit.",
+        "limitations": "Not a bidirectional battery-bank coulomb counter; no reliable bank state of charge. External shunt range and powered RS485 interface must match."
+      }
+    ],
+    "limitations": [
+      "Passive batteries have no digital port or self-reported telemetry; measurements come from an external monitor.",
+      "Catalogue Ah is a rated capacity at stated test conditions, not present usable capacity or state of health."
+    ],
+    "evidence": [
+      {
+        "path": "docs/catalog/no-comms.md",
+        "sha256": "ab1066de8e9c0c1d019bac1ac8a9937300276d613ae30f7fbdd72b01a743a57d",
+        "note": "Passive lead-acid research (Rolls/Surrette): no battery communications protocol. Applies to any flooded, AGM or gel battery.",
+        "external": true
+      },
+      {
+        "path": "crates/o89-core/src/dialects.rs",
+        "sha256": "e98c0a42c3e62b03a8bd3211a7165daeb042a75d7b0f67813b7ae8904a78e1be",
+        "note": "Current decoder coverage: PZEM DC V/A/W; EPEVER B-series battery voltage only. No SmartShunt or IPower decoder."
+      }
+    ]
+  },
+  "smartshunt": {
+    "status": "documented",
+    "driver": null,
+    "ports": [
+      {
+        "name": "VE.Direct (4-pin JST-PH)",
+        "protocol": "VE.Direct text",
+        "settings": "19200 baud, 8N1; unsolicited push; one device per port",
+        "adapter": "Compatible VE.Direct serial interface and cable; controller electrical-interface validation required."
+      }
+    ],
+    "availableMetrics": [
+      {
+        "name": "Bank voltage",
+        "unit": "V",
+        "nature": "measured",
+        "conditions": "Device capability; no live readings are connected in this preview."
+      },
+      {
+        "name": "Signed bank current",
+        "unit": "A",
+        "nature": "measured",
+        "conditions": "Device capability; no live readings are connected in this preview."
+      },
+      {
+        "name": "Bank power",
+        "unit": "W",
+        "nature": "measured",
+        "conditions": "Device capability; no live readings are connected in this preview."
+      },
+      {
+        "name": "Consumed charge",
+        "unit": "Ah",
+        "nature": "measured",
+        "conditions": "Device capability; no live readings are connected in this preview."
+      },
+      {
+        "name": "State of charge",
+        "unit": "%",
+        "nature": "estimated",
+        "conditions": "Battery-monitor mode; configured capacity and periodic full-charge synchronisation required."
+      },
+      {
+        "name": "Time to go",
+        "unit": "min",
+        "nature": "estimated",
+        "conditions": "Depends on present load, configured discharge floor and synchronised state of charge."
+      },
+      {
+        "name": "Battery temperature",
+        "unit": "\u00b0C",
+        "nature": "measured",
+        "conditions": "Optional temperature sensor; auxiliary input configured for temperature."
+      }
+    ],
+    "implementedMetrics": [],
+    "monitoringOptions": [],
+    "limitations": [
+      "Origin89 VE.Direct driver and hardware integration are not implemented.",
+      "300 A product exists in the current manual; verify its exact PID and firmware because the pinned 3.34 PID table does not list it.",
+      "Select the shunt for maximum bank current including surges and supply voltage; do not select it from Ah alone.",
+      "State of charge is an estimate, not battery health. DC-meter mode does not supply battery state of charge.",
+      "IP21 models only; IP65 variants require separate verification."
+    ],
+    "evidence": [
+      {
+        "path": "docs/vendor/victron-ve-direct-protocol-3.34.pdf",
+        "sha256": "07e2878acda139a3b6c5f7d9f99e450b1d374da5f04073c15a4c17096d3f7e0c",
+        "note": "Table I BMV71x/SmartShunt, MON modes and product IDs. The 300 A PID is not listed in revision 3.34.",
+        "url": "https://www.victronenergy.com/upload/documents/VE.Direct-Protocol-3.34.pdf",
+        "external": true
+      },
+      {
+        "path": "crates/o89-core/src/dialects.rs",
+        "sha256": "e98c0a42c3e62b03a8bd3211a7165daeb042a75d7b0f67813b7ae8904a78e1be",
+        "note": "Current decoder coverage: PZEM DC V/A/W; EPEVER B-series battery voltage only. No SmartShunt or IPower decoder."
+      }
+    ]
+  },
+  "pzem-017": {
+    "status": "decoder-implemented",
+    "driver": "o89_core::dialects::pzem_dc",
+    "ports": [
+      {
+        "name": "RS485 terminals",
+        "protocol": "Modbus RTU",
+        "settings": "9600 baud, 8N2; default address 1",
+        "adapter": "RS485 interface, external 50/100/200/300 A shunt and powered 5 V communications side per manual."
+      }
+    ],
+    "availableMetrics": [
+      {
+        "name": "DC voltage",
+        "unit": "V",
+        "nature": "measured",
+        "conditions": "Device capability; no live readings are connected in this preview."
+      },
+      {
+        "name": "DC current",
+        "unit": "A",
+        "nature": "measured",
+        "conditions": "Unsigned, directional current; not signed net battery-bank current."
+      },
+      {
+        "name": "DC power",
+        "unit": "W",
+        "nature": "measured",
+        "conditions": "Device capability; no live readings are connected in this preview."
+      },
+      {
+        "name": "DC energy",
+        "unit": "Wh",
+        "nature": "measured",
+        "conditions": "Device counter; not mapped by the current Origin89 decoder."
+      }
+    ],
+    "implementedMetrics": [
+      "DC voltage",
+      "DC current",
+      "DC power"
+    ],
+    "monitoringOptions": [],
+    "limitations": [
+      "Decoder implemented; full controller-to-device hardware operation has not been verified.",
+      "No signed discharge current or state of charge; do not recommend as a bidirectional bank monitor.",
+      "External shunt and meter range configuration must match; default meter range is 100 A.",
+      "RS485 side needs external 5 V power; meter inputs below 7 V require the separate supply arrangement in the manual."
+    ],
+    "evidence": [
+      {
+        "path": "docs/vendor/pzem-003-017-manual.pdf",
+        "sha256": "88838a8483436964c44f59aa1befe852a7f2c900ea0d3f6aae481a5cbb0fa40d",
+        "note": "PZEM-003/017 manual: register map, shunt range and powered RS485 interface.",
+        "url": "https://downloads.vodnici.net/uploads/wpforo/attachments/214/6221-Peacefair-PZEM-003-DC-elektromr.pdf",
+        "external": true
+      },
+      {
+        "path": "crates/o89-core/src/dialects.rs",
+        "sha256": "e98c0a42c3e62b03a8bd3211a7165daeb042a75d7b0f67813b7ae8904a78e1be",
+        "note": "Current decoder coverage: PZEM DC V/A/W; EPEVER B-series battery voltage only. No SmartShunt or IPower decoder."
+      }
+    ]
+  },
+  "epever-ipower": {
+    "status": "documented",
+    "driver": null,
+    "ports": [
+      {
+        "name": "RS485 (RJ45)",
+        "protocol": "Modbus RTU",
+        "settings": "115200 baud, 8N1; default address 3",
+        "adapter": "Compatible RS485 interface and model-specific EPEVER cable; verify connector pinout."
+      }
+    ],
+    "availableMetrics": [
+      {
+        "name": "DC input voltage",
+        "unit": "V",
+        "nature": "measured",
+        "conditions": "Device capability; no live readings are connected in this preview."
+      },
+      {
+        "name": "DC input current",
+        "unit": "A",
+        "nature": "measured",
+        "conditions": "Protocol marks this reading as unavailable on some models; zero can indicate unsupported."
+      },
+      {
+        "name": "AC output voltage",
+        "unit": "V",
+        "nature": "measured",
+        "conditions": "Device capability; no live readings are connected in this preview."
+      },
+      {
+        "name": "AC output current",
+        "unit": "A",
+        "nature": "measured",
+        "conditions": "Device capability; no live readings are connected in this preview."
+      },
+      {
+        "name": "AC output power",
+        "unit": "W",
+        "nature": "measured",
+        "conditions": "Device capability; no live readings are connected in this preview."
+      },
+      {
+        "name": "Inverter temperature",
+        "unit": "\u00b0C",
+        "nature": "measured",
+        "conditions": "Device capability; no live readings are connected in this preview."
+      },
+      {
+        "name": "Inverter status",
+        "unit": null,
+        "nature": "status",
+        "conditions": "Device capability; no live readings are connected in this preview."
+      }
+    ],
+    "implementedMetrics": [],
+    "monitoringOptions": [],
+    "limitations": [
+      "Protocol documented; no Origin89 IPower decoder or hardware validation yet.",
+      "Exact model and firmware determine available registers. A shared port does not establish identical metrics.",
+      "DC input is the inverter branch, not net battery-bank current."
+    ],
+    "evidence": [
+      {
+        "path": "docs/vendor/epever-inverter-protocol-v1.0.pdf",
+        "sha256": "f9e17b0f400a27a7907432b84787ab4229930c3acd5e2534d6aa5fee7478d0be",
+        "note": "IP/IP-Plus/NP input registers 0x3108\u20130x3112 and inverter status 0x3202.",
+        "external": true
+      },
+      {
+        "path": "crates/o89-core/src/dialects.rs",
+        "sha256": "e98c0a42c3e62b03a8bd3211a7165daeb042a75d7b0f67813b7ae8904a78e1be",
+        "note": "Current decoder coverage: PZEM DC V/A/W; EPEVER B-series battery voltage only. No SmartShunt or IPower decoder."
+      }
+    ]
+  },
+  "epever-xtra4210n": {
+    "status": "documented",
+    "driver": null,
+    "ports": [
+      {
+        "name": "RS485 (RJ45)",
+        "protocol": "Modbus RTU",
+        "settings": "Research mapping: 115200 baud, 8N1; address 1. Verify firmware.",
+        "adapter": "Compatible RS485 interface and model-specific EPEVER cable."
+      }
+    ],
+    "availableMetrics": [
+      {
+        "name": "PV voltage",
+        "unit": "V",
+        "nature": "measured",
+        "conditions": "Device capability; no live readings are connected in this preview."
+      },
+      {
+        "name": "PV current",
+        "unit": "A",
+        "nature": "measured",
+        "conditions": "Device capability; no live readings are connected in this preview."
+      },
+      {
+        "name": "PV power",
+        "unit": "W",
+        "nature": "measured",
+        "conditions": "Device capability; no live readings are connected in this preview."
+      },
+      {
+        "name": "Battery voltage",
+        "unit": "V",
+        "nature": "measured",
+        "conditions": "Device capability; no live readings are connected in this preview."
+      },
+      {
+        "name": "Charge current",
+        "unit": "A",
+        "nature": "measured",
+        "conditions": "Controller output, not signed net battery-bank current."
+      },
+      {
+        "name": "Controller temperature",
+        "unit": "\u00b0C",
+        "nature": "measured",
+        "conditions": "Device capability; no live readings are connected in this preview."
+      },
+      {
+        "name": "Charge state",
+        "unit": null,
+        "nature": "status",
+        "conditions": "Device capability; no live readings are connected in this preview."
+      }
+    ],
+    "implementedMetrics": [],
+    "monitoringOptions": [],
+    "limitations": [
+      "XTRA mapping is a documented integration candidate; exact registers require firmware verification.",
+      "Current Origin89 epever_b decoder only covers one B-series register and does not establish XTRA support."
+    ],
+    "evidence": [
+      {
+        "path": "docs/catalog/README.md",
+        "sha256": "f332293ecec835b7d6196c0fea3af28eba053e3cecb6f38565669691e50dc284",
+        "note": "XTRA4210N worked example: researched telemetry and RS485 connection, driver not written.",
+        "external": true
+      },
+      {
+        "path": "crates/o89-core/src/dialects.rs",
+        "sha256": "e98c0a42c3e62b03a8bd3211a7165daeb042a75d7b0f67813b7ae8904a78e1be",
+        "note": "Current decoder coverage: PZEM DC V/A/W; EPEVER B-series battery voltage only. No SmartShunt or IPower decoder."
+      }
+    ]
+  }
+}

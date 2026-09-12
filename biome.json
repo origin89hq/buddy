@@ -1,0 +1,103 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.13/schema.json",
+  "files": {
+    "includes": [
+      "**",
+      "!**/node_modules",
+      "!**/dist",
+      "!**/storybook-static",
+      "!**/.astro",
+      "!**/.wrangler",
+      "!apps/website/src/react/generated",
+      "!apps/website/design/generated",
+      "!pnpm-lock.yaml",
+      "!apps/buddy/test/fixtures",
+      "!apps/buddy/knowledge",
+      "!apps/website/public",
+      "!**/.website-server",
+      "!**/website-report",
+      "!**/storybook-server",
+      "!**/design-react-dist",
+      "!**/design-dist",
+      "!**/storybook-report",
+      "!**/*.astro",
+      "!**/*.css",
+      "!clients/ts/src/generated.ts",
+      "!**/.origin89",
+      "!**/.agents",
+      "!apps/website/src/assets",
+      "!apps/docs/public",
+      "!**/worker-configuration.d.ts",
+      "!**/target",
+      "!**/.build",
+      "!**/.gradle",
+      "!**/build",
+      "!platforms/**/Generated*"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 100
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double",
+      "semicolons": "always"
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "style": {
+        "noNonNullAssertion": "off",
+        "useTemplate": "off"
+      },
+      "suspicious": {
+        "noAssignInExpressions": "off",
+        "noExplicitAny": "error",
+        "noArrayIndexKey": "warn",
+        "useIterableCallbackReturn": "warn",
+        "noShadowRestrictedNames": "warn"
+      },
+      "correctness": {
+        "noUnusedVariables": "warn",
+        "noUnusedFunctionParameters": "warn",
+        "useExhaustiveDependencies": "warn"
+      },
+      "performance": {
+        "noAccumulatingSpread": "warn"
+      },
+      "complexity": {
+        "noImportantStyles": "off"
+      },
+      "a11y": {
+        "useGenericFontNames": "warn",
+        "useSemanticElements": "warn",
+        "useAriaPropsSupportedByRole": "warn",
+        "useButtonType": "warn",
+        "useKeyWithClickEvents": "warn",
+        "noNoninteractiveTabindex": "warn"
+      }
+    }
+  },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  },
+  "json": {
+    "formatter": {
+      "enabled": false
+    }
+  },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  }
+}

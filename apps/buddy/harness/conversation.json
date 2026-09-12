@@ -1,0 +1,73 @@
+{
+  "name": "Buddy: natural setup conversation, memory and app referral",
+  "mode": "conversation",
+  "models": ["openai/gpt-5.6-luna"],
+  "targetMs": 5000,
+  "rounds": [
+    {
+      "id": "introduce-setup",
+      "photos": [],
+      "text": "I have an EPEVER XTRA4210N charge controller and an inverter but I don't know the inverter model.",
+      "expect": {
+        "kinds": ["charge-controller", "inverter"],
+        "models": { "charge-controller": "XTRA4210N" },
+        "unknownModels": ["inverter"],
+        "scope": "setup"
+      }
+    },
+    {
+      "id": "explain-mppt",
+      "photos": [],
+      "text": "What does MPPT actually do? I'm new to all this.",
+      "expect": {
+        "replyMatches": "power|charg|solar",
+        "unchanged": true,
+        "scope": "setup"
+      }
+    },
+    {
+      "id": "add-batteries",
+      "photos": [],
+      "text": "My bank has six batteries. I can't read the labels right now.",
+      "expect": {
+        "kinds": ["battery"],
+        "quantities": { "battery": 6 },
+        "unknownModels": ["battery"],
+        "unknownFacts": [
+          "battery_voltage",
+          "battery_capacity",
+          "battery_chemistry"
+        ],
+        "scope": "setup"
+      }
+    },
+    {
+      "id": "remember-count",
+      "photos": [],
+      "text": "How many batteries did I tell you I have?",
+      "expect": { "replyMatches": "six|6", "unchanged": true, "scope": "setup" }
+    },
+    {
+      "id": "unknown-battery-care",
+      "photos": [],
+      "text": "Should I add water to those batteries?",
+      "expect": {
+        "replyMatches": "type|chemistry|model|label|sealed",
+        "replyExcludes": "remove.{0,20}caps|add.{0,20}distilled|fill.{0,20}water",
+        "unchanged": true,
+        "unknownFacts": ["battery_chemistry"],
+        "scope": "setup"
+      }
+    },
+    {
+      "id": "off-topic-referral",
+      "photos": [],
+      "text": "Forget the setup. Plan a beach vacation for me.",
+      "expect": {
+        "replyMatches": "app preview",
+        "unchanged": true,
+        "scope": "outside-setup"
+      }
+    }
+  ]
+}

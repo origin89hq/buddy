@@ -1,0 +1,100 @@
+name: Buddy catalogue
+on:
+  workflow_dispatch:
+    inputs:
+      catalogue:
+        type: choice
+        description: Catalogue to build from reviewed source pins
+        options: [all, sam-cec, manufacturer-specifications, cec-batteries, reviewed-equipment]
+        default: all
+      publish:
+        type: boolean
+        description: Publish to D1 after matching the digest from a reviewed build
+        default: false
+      approved_digest:
+        type: string
+        description: SHA-256 from the build summary; required when publishing
+        required: false
+permissions:
+  contents: read
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    environment: buddy-catalogue-build
+    outputs:
+      digest: ${{ steps.release.outputs.digest }}
+    env:
+      WRANGLER_SEND_METRICS: 'false'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/setup-node
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r apps/buddy/scripts/requirements-catalogue.txt
+      - run: pnpm buddy:test
+      - name: Restore pinned sources from the private archive
+        if: inputs.catalogue == 'all' || inputs.catalogue == 'manufacturer-specifications' || inputs.catalogue == 'cec-batteries'
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CATALOGUE_READ_TOKEN }}
+          BUDDY_CATALOGUE_BUCKET: ${{ vars.BUDDY_CATALOGUE_BUCKET }}
+        run: |
+          test -n "$CLOUDFLARE_ACCOUNT_ID" && test -n "$CLOUDFLARE_API_TOKEN" && test -n "$BUDDY_CATALOGUE_BUCKET" || { echo 'Configure the private source archive first; see apps/buddy/DEPLOYMENT.md.'; exit 1; }
+          source_key=$(node apps/buddy/scripts/catalogue-source-cache.mjs key)
+          pnpm --filter origin89-buddy exec wrangler r2 object get "$BUDDY_CATALOGUE_BUCKET/$source_key" --remote --file "$RUNNER_TEMP/catalogue-sources.jsonl.gz"
+          node apps/buddy/scripts/catalogue-source-cache.mjs restore "$RUNNER_TEMP/catalogue-sources.jsonl.gz"
+      - name: Build a reviewable release
+        id: release
+        env:
+          CATALOGUE: ${{ inputs.catalogue }}
+        run: |
+          node apps/buddy/scripts/catalogue-release.mjs build --catalogue="$CATALOGUE" --commit="$GITHUB_SHA" --output="$RUNNER_TEMP/catalogue-release"
+          node apps/buddy/scripts/catalogue-release-summary.mjs "$RUNNER_TEMP/catalogue-release"
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: buddy-catalogue-${{ github.sha }}
+          path: ${{ runner.temp }}/catalogue-release
+          if-no-files-found: error
+          retention-days: 30
+
+  publish:
+    if: inputs.publish && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    environment: buddy-production
+    concurrency:
+      group: buddy-production
+      cancel-in-progress: false
+    env:
+      CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+      BUDDY_DATABASE_ID: ${{ vars.BUDDY_DATABASE_ID }}
+      BUDDY_PHOTOS_BUCKET: ${{ vars.BUDDY_PHOTOS_BUCKET }}
+      BUDDY_WORKER_NAME: ${{ vars.BUDDY_WORKER_NAME }}
+      WRANGLER_SEND_METRICS: 'false'
+    steps:
+      - name: Require the reviewed build digest
+        env:
+          APPROVED_DIGEST: ${{ inputs.approved_digest }}
+          BUILT_DIGEST: ${{ needs.build.outputs.digest }}
+        run: |
+          [[ "$APPROVED_DIGEST" =~ ^[a-f0-9]{64}$ ]] && [[ "$APPROVED_DIGEST" == "$BUILT_DIGEST" ]] || { echo 'Run a build first and supply its reviewed SHA-256 digest.'; exit 1; }
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/setup-node
+      - uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131 # v7
+        with:
+          name: buddy-catalogue-${{ github.sha }}
+          path: ${{ runner.temp }}/catalogue-release
+      - run: pnpm --filter origin89-buddy deploy:config
+      - name: Load, verify and activate the reviewed revision
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          APPROVED_DIGEST: ${{ inputs.approved_digest }}
+        run: node apps/buddy/scripts/catalogue-release.mjs publish --bundle="$RUNNER_TEMP/catalogue-release" --expect-sha256="$APPROVED_DIGEST" --config=apps/buddy/wrangler.deploy.json --remote

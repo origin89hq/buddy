@@ -1,0 +1,41 @@
+{
+  "name": "origin89-buddy",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --port 8790",
+    "dev:fixture": "wrangler dev --env fixture --port 8790",
+    "check": "wrangler types && tsc --noEmit",
+    "dry-run": "wrangler deploy --dry-run",
+    "deploy:config": "node --env-file-if-exists=.env.production scripts/deployment-config.mjs",
+    "knowledge:release": "node scripts/catalogue-release.mjs",
+    "test": "node --experimental-strip-types --test test/*.test.ts",
+    "knowledge:build": "node scripts/sam-catalogue.mjs",
+    "knowledge:import:local": "node scripts/sam-import-local.mjs",
+    "knowledge:manufacturers:snapshot": "node scripts/snapshot-manufacturers.mjs",
+    "knowledge:manufacturers:build": "node scripts/manufacturer-catalogue.mjs",
+    "knowledge:manufacturers:import:local": "node scripts/sam-import-local.mjs --manufacturers",
+    "knowledge:cec-batteries:build": "node scripts/cec-batteries.mjs",
+    "knowledge:cec-batteries:import:local": "node scripts/sam-import-local.mjs --cec-batteries",
+    "knowledge:document-indexes": "node scripts/document-indexes.mjs",
+    "knowledge:integration-identity": "node scripts/integration-identity.mjs",
+    "eval:dev": "wrangler dev --config harness/wrangler.jsonc --persist-to .wrangler/state --ip 127.0.0.1 --port 8793 --inspector-port 9233"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^4.0.60",
+    "@origin89/buddy": "workspace:*",
+    "agents": "0.22.0",
+    "ai": "^7.0.93",
+    "workers-ai-provider": "4.0.0",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "jsonc-parser": "3.3.1",
+    "parse5": "7.3.0",
+    "typescript": "6.0.3",
+    "wrangler": "4.129.1",
+    "playwright": "1.63.0",
+    "sharp": "0.35.3"
+  },
+  "license": "UNLICENSED"
+}

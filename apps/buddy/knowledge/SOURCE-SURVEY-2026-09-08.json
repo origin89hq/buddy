@@ -1,0 +1,1513 @@
+{
+  "id": "source-survey",
+  "checkedAt": "2026-09-08",
+  "method": "curl with a desktop browser user agent and a 25 s timeout; no account, no purchase, no vendor contact. HTTP 403 means the site refused an anonymous fetch, not that the data is absent. pdfLinks and htmlTables are counts of href=\"*.pdf\" and <table> in the returned HTML, a structural hint and not a count of specifications.",
+  "downloaded": [
+    {
+      "url": "https://solarequipment.energy.ca.gov/Home/DownloadtoExcel?filename=BatteryList",
+      "bytes": 116386,
+      "sha256": "11fcf434ade5da0fa4b46bc322fcab2e4d658ff4ea29a21e1585ec6493d30dde",
+      "note": "CEC battery list workbook; header at row 12, data from row 14; sheet says 'Data has not changed since September 1, 2026'"
+    },
+    {
+      "url": "https://solarequipment.energy.ca.gov/Home/DownloadtoExcel?filename=InvertersList",
+      "bytes": 1612915,
+      "sha256": "3ec002ee9e2c6d92fb10d4257616427246fcbc218e214a452b133abdbbc25442",
+      "note": "CEC grid-support inverter workbook: sheet1 solar inverters (2,169 rows incl. notes), sheet2 battery inverters (1,137 rows incl. notes)"
+    },
+    {
+      "url": "https://solarequipment.energy.ca.gov/Home/DownloadtoExcel?filename=EnergyStorage",
+      "bytes": 1338739,
+      "sha256": "cdc3ddee022ae3bec37ad66f446944f4e41e0c8e22acd296a9f6084d68b59dae",
+      "note": "CEC energy storage system list, 6,671 rows incl. notes; 'Data has not changed since August 21, 2026'"
+    },
+    {
+      "url": "https://www.energy.ca.gov/sites/default/files/2024-09/Batteries_Archive_ADA.xlsx",
+      "bytes": 18711,
+      "sha256": "34f8254a86cb97179104c23c1bd8c02738aab445758460f8ccdaaca423340dc6",
+      "note": "CEC archived batteries, 21 rows"
+    },
+    {
+      "url": "https://cer.gov.au/document/cec-approved-inverters-0",
+      "bytes": 526262,
+      "sha256": "733db02cccc89e6413452e4563f35f5218e22884c9796cf2313412102e6a8ae1",
+      "note": "Clean Energy Regulator (AU) approved inverters CSV, 4,739 data rows, 'Data as at 02/09/2026'"
+    },
+    {
+      "url": "https://cer.gov.au/document/cec-approved-inverters",
+      "bytes": 233054,
+      "sha256": "3a5c371c23fc5fccf0ce90ebaaf92c252290d9d4a5a827fff6b5174cc2a5cd05",
+      "note": "Same list as XLSX"
+    },
+    {
+      "url": "https://cer.gov.au/document/cec-approved-solar-batteries-0",
+      "bytes": 446102,
+      "sha256": "c074023b38045a7e84d1d810f87fd27422a20406c41432b43a3467724ebfea53",
+      "note": "Clean Energy Regulator (AU) approved batteries CSV, 3,605 data rows"
+    },
+    {
+      "url": "https://cer.gov.au/document/cec-approved-solar-batteries",
+      "bytes": 193434,
+      "sha256": "ddf4598745b6dff0727bd5e66bae89243a487bd3eafe8c6f214df08d031d3e3a",
+      "note": "Same list as XLSX"
+    },
+    {
+      "url": "https://www.solarquotes.com.au/export-option/for-analysts-4/",
+      "bytes": 29921,
+      "sha256": "7fbe6618cc5a6b0828b1be68af2d2c4d18cb790ab03cad700879b7a9d77b5ced",
+      "note": "SolarQuotes battery comparison export, XLSX, 117 rows, 21 columns"
+    },
+    {
+      "url": "https://github.com/victronenergy/dbus_modbustcp/raw/master/CCGX-Modbus-TCP-register-list.xlsx",
+      "bytes": 77416,
+      "sha256": "ef5fcaa39fc2798ea088031c351326519f50ccb9008064b70ae72b825217b2e9",
+      "note": "Victron GX Modbus-TCP register list, 1,010 rows"
+    },
+    {
+      "url": "https://www.victronenergy.com/upload/documents/Datasheet-MultiPlus-II-120V-EN-.pdf",
+      "bytes": 552588,
+      "sha256": "cde40c6f166c146cf64dacf3bb700b7730f01326aea0f853263c17540f50037e",
+      "note": "Victron MultiPlus-II 120 V datasheet"
+    },
+    {
+      "url": "https://solar.se.com/us/wp-content/uploads/sites/7/2021/10/XW-Pro-UL-Datasheet.pdf",
+      "bytes": 256427,
+      "sha256": "f01b4934f60e9d426a52b236629f46bc5188441eb5f6bffb92854a56e1d24a48",
+      "note": "Schneider Conext XW Pro UL datasheet"
+    },
+    {
+      "url": "https://pylonwebs3.s3.amazonaws.com/upload/2024/09/25/RESS-Installation%20Manual-US5000%20US5000-B%205PMPA08-00219_V1.0_20240925124144A058.pdf",
+      "bytes": 2430453,
+      "sha256": "70ae894fc6f22bed50c51417c1b35d825ef88c02badb5f31f7694ef11c04b134",
+      "note": "Pylontech US5000 installation manual"
+    },
+    {
+      "url": "https://resources.kohler.com/power/kohler/residential/pdf/tp7092.pdf",
+      "bytes": 2946927,
+      "sha256": "f23b91da82a968f2dd99aae4626f9f900a2f93d88e8ef5e3d1797c9486845fef",
+      "note": "Kohler 14RCA/14RCAL/20RCA operation manual TP-7092"
+    },
+    {
+      "url": "https://cdn.powerequipment.honda.com/pe/pdf/manuals/pci54908.pdf",
+      "bytes": 844884,
+      "sha256": "533418826455f79615e1a01ee47a846216238b07d7913199133a115a5e47b90c",
+      "note": "Honda EU7000iS remote start FAQ"
+    }
+  ],
+  "probed": [
+    {
+      "url": "https://apps.fcc.gov/oetcf/eas/reports/GenericSearch.cfm",
+      "http": 403,
+      "contentType": "text/html",
+      "finalUrl": "https://apps.fcc.gov/oetcf/eas/reports/GenericSearch.cfm",
+      "bytes": 417,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://battlebornbatteries.com/products.json?limit=2",
+      "http": 200,
+      "contentType": "application/json; charset=utf-8",
+      "finalUrl": "https://battlebornbatteries.com/products.json?limit=2",
+      "bytes": 3889,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "shopify"
+      ]
+    },
+    {
+      "url": "https://cdn.powerequipment.honda.com/pe/pdf/manuals/pci54908.pdf",
+      "http": 200,
+      "contentType": "application/pdf",
+      "finalUrl": "https://cdn.powerequipment.honda.com/pe/pdf/manuals/pci54908.pdf",
+      "bytes": 844884,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://certifications.sunspec.org/",
+      "http": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://certifications.sunspec.org/",
+      "bytes": 5673,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://discoverbattery.com/",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://discoverbattery.com/",
+      "bytes": 374798,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://discoverbattery.com/documents",
+      "http": 404,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://discoverbattery.com/documents",
+      "bytes": 1317,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://eg4electronics.com/wp-json/wp/v2/types",
+      "http": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "finalUrl": "https://eg4electronics.com/wp-json/wp/v2/types",
+      "bytes": 49246,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress"
+      ]
+    },
+    {
+      "url": "https://en.growatt.com/",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://en.growatt.com/",
+      "bytes": 96720,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://en.growatt.com/download",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://en.growatt.com/download",
+      "bytes": 18,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://en.growatt.com/products/spf-3000tl-lvm-es",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://en.growatt.com/products/spf-3000tl-lvm-es",
+      "bytes": 95116,
+      "pdfLinks": 3,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://fccid.io/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://fccid.io/",
+      "bytes": 51108,
+      "pdfLinks": 0,
+      "htmlTables": 1,
+      "platformHints": []
+    },
+    {
+      "url": "https://fccid.io/search?q=Renogy",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://fccid.io/search?q=Renogy",
+      "bytes": 62146,
+      "pdfLinks": 0,
+      "htmlTables": 56,
+      "platformHints": []
+    },
+    {
+      "url": "https://firmanpowerequipment.com/products.json?limit=2",
+      "http": 200,
+      "contentType": "application/json; charset=utf-8",
+      "finalUrl": "https://firmanpowerequipment.com/products.json?limit=2",
+      "bytes": 10897,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "shopify"
+      ]
+    },
+    {
+      "url": "https://fullriverbattery.com/product/dc400-6/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://fullriverbattery.com/batteries/part-dc400-6/",
+      "bytes": 215841,
+      "pdfLinks": 3,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress",
+        "woocommerce"
+      ]
+    },
+    {
+      "url": "https://fullriverbattery.com/products/",
+      "http": 404,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://fullriverbattery.com/products/",
+      "bytes": 174236,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress",
+        "woocommerce"
+      ]
+    },
+    {
+      "url": "https://gpelectric.com/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://gopowersolar.com/",
+      "bytes": 513337,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress",
+        "woocommerce"
+      ]
+    },
+    {
+      "url": "https://homerenergy.com/products/pro/docs/latest/component_library.html",
+      "http": 200,
+      "contentType": "text/html",
+      "finalUrl": "https://homerenergy.com/products/pro/docs/latest/component_library.html",
+      "bytes": 21635,
+      "pdfLinks": 0,
+      "htmlTables": 2,
+      "platformHints": []
+    },
+    {
+      "url": "https://iq.ulprospector.com/",
+      "http": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://iq.ulprospector.com/",
+      "bytes": 293998,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://kohlerhomeenergy.rehlko.com/",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.kohlerhomeenergy.rehlko.com/",
+      "bytes": 382241,
+      "pdfLinks": 1,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://outbackpower.com/product-documentation",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://outbackpower.com/product-documentation/",
+      "bytes": 156359,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress",
+        "woocommerce"
+      ]
+    },
+    {
+      "url": "https://outbackpower.com/product/fxr-vfxr-series/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://outbackpower.com/product/fxr-vfxr-series/",
+      "bytes": 151491,
+      "pdfLinks": 18,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress",
+        "woocommerce"
+      ]
+    },
+    {
+      "url": "https://powerequipment.honda.ca/",
+      "http": 403,
+      "contentType": "text/html",
+      "finalUrl": "https://powerequipment.honda.ca/",
+      "bytes": 375,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://powerequipment.honda.com/generators/models/eu7000is",
+      "http": 403,
+      "contentType": "text/html",
+      "finalUrl": "https://powerequipment.honda.com/generators/models/eu7000is",
+      "bytes": 410,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://pylonwebs3.s3.amazonaws.com/upload/2024/09/25/RESS-Installation%20Manual-US5000%20US5000-B%205PMPA08-00219_V1.0_20240925124144A058.pdf",
+      "http": 200,
+      "contentType": "application/pdf",
+      "finalUrl": "https://pylonwebs3.s3.amazonaws.com/upload/2024/09/25/RESS-Installation%20Manual-US5000%20US5000-B%205PMPA08-00219_V1.0_20240925124144A058.pdf",
+      "bytes": 2430453,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://ramuk.intertekconnect.com/webclients/its/dlp/products.nsf/",
+      "http": 200,
+      "contentType": "text/html; charset=US-ASCII",
+      "finalUrl": "https://ramuk.intertekconnect.com/webclients/its/dlp/products.nsf/",
+      "bytes": 600,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jblance/mpp-solar/master/README.md",
+      "http": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "finalUrl": "https://raw.githubusercontent.com/jblance/mpp-solar/master/README.md",
+      "bytes": 1383,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://resources.kohler.com/power/kohler/residential/pdf/tp7092.pdf",
+      "http": 200,
+      "contentType": "application/pdf",
+      "finalUrl": "https://resources.kohler.com/power/kohler/residential/pdf/tp7092.pdf",
+      "bytes": 2946927,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://samlexamerica.com/wp-json/wc/store/v1/products?per_page=2",
+      "http": 404,
+      "contentType": "application/json; charset=UTF-8",
+      "finalUrl": "https://samlexamerica.com/wp-json/wc/store/v1/products?per_page=2",
+      "bytes": 114,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://solar.se.com/us/en/documents/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://solar.se.com/us/en/",
+      "bytes": 87288,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress"
+      ]
+    },
+    {
+      "url": "https://solar.se.com/us/en/product-range/66297-xw-pro/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://solar.se.com/us/en/",
+      "bytes": 87288,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress"
+      ]
+    },
+    {
+      "url": "https://solar.se.com/us/en/product/conext-xw-pro/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://solar.se.com/us/en/",
+      "bytes": 87288,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress"
+      ]
+    },
+    {
+      "url": "https://solar.se.com/us/wp-content/uploads/sites/7/2021/10/XW-Pro-UL-Datasheet.pdf",
+      "http": 200,
+      "contentType": "application/pdf",
+      "finalUrl": "https://solar.se.com/us/wp-content/uploads/sites/7/2021/10/XW-Pro-UL-Datasheet.pdf",
+      "bytes": 256427,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://sungoldpower.com/products.json?limit=2",
+      "http": 200,
+      "contentType": "application/json; charset=utf-8",
+      "finalUrl": "https://sungoldpower.com/products.json?limit=2",
+      "bytes": 9887,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "shopify"
+      ]
+    },
+    {
+      "url": "https://sunspec.org/product-certification-registry",
+      "http": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://sunspec.org/product-certification-registry",
+      "bytes": 5769,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://thornwave.com/",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.thornwave.com/",
+      "bytes": 247472,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "shopify"
+      ]
+    },
+    {
+      "url": "https://us.growatt.com/",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://us.growatt.com/",
+      "bytes": 82397,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://us.sokbattery.com/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://us.sokbattery.com/",
+      "bytes": 1525824,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://us.sokbattery.com/product/48v-100ah-lifepo4-server-rack-battery/",
+      "http": 404,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://us.sokbattery.com/product/48v-100ah-lifepo4-server-rack-battery",
+      "bytes": 2207,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://us.sokbattery.com/products.json?limit=2",
+      "http": 400,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://us.sokbattery.com/products.json?limit=2",
+      "bytes": 2204,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://us.sokbattery.com/shop/",
+      "http": 404,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://us.sokbattery.com/shop",
+      "bytes": 2208,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://usbattery.com/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.usbattery.com/",
+      "bytes": 208173,
+      "pdfLinks": 3,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress"
+      ]
+    },
+    {
+      "url": "https://valentin-software.com/en/products/pvsol-premium/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://valentin-software.com/en/products/pvsol-premium/",
+      "bytes": 340074,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress",
+        "woocommerce"
+      ]
+    },
+    {
+      "url": "https://voltronicpower.com/en-US/",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://voltronicpower.com/en-US/",
+      "bytes": 128939,
+      "pdfLinks": 0,
+      "htmlTables": 4,
+      "platformHints": []
+    },
+    {
+      "url": "https://voltronicpower.com/en-US/Product/Category/1",
+      "http": 500,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://voltronicpower.com/en-US/Product/Category/1",
+      "bytes": 11001,
+      "pdfLinks": 0,
+      "htmlTables": 2,
+      "platformHints": []
+    },
+    {
+      "url": "https://westinghouseoutdoorpower.com/products.json?limit=2",
+      "http": 200,
+      "contentType": "application/json; charset=utf-8",
+      "finalUrl": "https://westinghouse.com/products.json?limit=2",
+      "bytes": 25311,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "shopify"
+      ]
+    },
+    {
+      "url": "https://www.aimscorp.net/wp-json/wc/store/v1/products?per_page=2",
+      "http": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "finalUrl": "https://www.aimscorp.net/wp-json/wc/store/v1/products?per_page=2",
+      "bytes": 19134,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress",
+        "woocommerce"
+      ]
+    },
+    {
+      "url": "https://www.bogartengineering.com/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.bogartengineering.com/",
+      "bytes": 118953,
+      "pdfLinks": 0,
+      "htmlTables": 2,
+      "platformHints": [
+        "wordpress"
+      ]
+    },
+    {
+      "url": "https://www.bogartengineering.com/products/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.bogartengineering.com/products.html",
+      "bytes": 129113,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress"
+      ]
+    },
+    {
+      "url": "https://www.canadiantire.ca/en/pdp/champion-power-equipment-4375-3500w-portable-generator-0550066p.html",
+      "http": 403,
+      "contentType": "text/html",
+      "finalUrl": "https://www.canadiantire.ca/en/pdp/champion-power-equipment-4375-3500w-portable-generator-0550066p.html",
+      "bytes": 488,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.championpowerequipment.com/product/201459-3650w-generator/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.championpowerequipment.com/product/201459-3650w-generator/",
+      "bytes": 277262,
+      "pdfLinks": 5,
+      "htmlTables": 1,
+      "platformHints": [
+        "wordpress",
+        "jsonld-product"
+      ]
+    },
+    {
+      "url": "https://www.cotek.com.tw/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.cotek.com.tw/",
+      "bytes": 40051,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.crownbattery.com/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.crownbattery.com/",
+      "bytes": 228329,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.crownbattery.com/products",
+      "http": 200,
+      "contentType": "text/html;charset=utf-8",
+      "finalUrl": "https://www.crownbattery.com/resources-motive-power",
+      "bytes": 151744,
+      "pdfLinks": 23,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.crownbattery.com/renewable-power",
+      "http": 404,
+      "contentType": "text/html;charset=utf-8",
+      "finalUrl": "https://www.crownbattery.com/renewable-power",
+      "bytes": 77453,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.crownbattery.com/resources-renewable-power",
+      "http": 404,
+      "contentType": "text/html;charset=utf-8",
+      "finalUrl": "https://www.crownbattery.com/resources-renewable-power",
+      "bytes": 77453,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.dekabatteries.com/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.eastpennmanufacturing.com/",
+      "bytes": 80136,
+      "pdfLinks": 2,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress"
+      ]
+    },
+    {
+      "url": "https://www.deyeinverter.com/download/",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.deyeinverter.com/download/",
+      "bytes": 47276,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.duromaxpower.com/products.json?limit=2",
+      "http": 200,
+      "contentType": "application/json; charset=utf-8",
+      "finalUrl": "https://www.duromaxpower.com/products.json?limit=2",
+      "bytes": 22443,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "shopify"
+      ]
+    },
+    {
+      "url": "https://www.eastpennmanufacturing.com/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.eastpennmanufacturing.com/",
+      "bytes": 80136,
+      "pdfLinks": 2,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress"
+      ]
+    },
+    {
+      "url": "https://www.eco-worthy.com/products.json?limit=2",
+      "http": 200,
+      "contentType": "application/json; charset=utf-8",
+      "finalUrl": "https://www.eco-worthy.com/products.json?limit=2",
+      "bytes": 12277,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "shopify"
+      ]
+    },
+    {
+      "url": "https://www.epever.com/download/",
+      "http": 404,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.epever.com/download/",
+      "bytes": 322942,
+      "pdfLinks": 0,
+      "htmlTables": 1,
+      "platformHints": [
+        "wordpress",
+        "woocommerce"
+      ]
+    },
+    {
+      "url": "https://www.epever.com/support/documents/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.epever.com/support/documents/",
+      "bytes": 461195,
+      "pdfLinks": 0,
+      "htmlTables": 1,
+      "platformHints": [
+        "wordpress",
+        "woocommerce"
+      ]
+    },
+    {
+      "url": "https://www.epever.com/support/download-center/",
+      "http": 404,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.epever.com/support/download-center/",
+      "bytes": 322957,
+      "pdfLinks": 0,
+      "htmlTables": 1,
+      "platformHints": [
+        "wordpress",
+        "woocommerce"
+      ]
+    },
+    {
+      "url": "https://www.fortresspower.com/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.fortresspower.com/",
+      "bytes": 1190922,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress",
+        "woocommerce"
+      ]
+    },
+    {
+      "url": "https://www.fortresspower.com/downloads/",
+      "http": 404,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.fortresspower.com/downloads/",
+      "bytes": 250629,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress",
+        "woocommerce"
+      ]
+    },
+    {
+      "url": "https://www.fortresspower.com/product/eflex-5-4/",
+      "http": 404,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.fortresspower.com/product/eflex-5-4/",
+      "bytes": 250693,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress",
+        "woocommerce"
+      ]
+    },
+    {
+      "url": "https://www.fortresspower.com/resources/",
+      "http": 404,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.fortresspower.com/resources/",
+      "bytes": 250627,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress",
+        "woocommerce"
+      ]
+    },
+    {
+      "url": "https://www.fullriverbattery.com/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://fullriverbattery.com/",
+      "bytes": 265767,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress",
+        "woocommerce"
+      ]
+    },
+    {
+      "url": "https://www.generac.com/residential-products/standby-generators/gaseous/22kw-standby-generator-wifi-enabled-7042/",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.generac.com/residential-products/standby-generators/gaseous/22kw-standby-generator-wifi-enabled-7042/",
+      "bytes": 83865,
+      "pdfLinks": 2,
+      "htmlTables": 1,
+      "platformHints": [
+        "jsonld-product"
+      ]
+    },
+    {
+      "url": "https://www.homegridenergy.com/",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.homegridenergy.com/",
+      "bytes": 33294,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.homegridenergy.com/products",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.homegridenergy.com/products",
+      "bytes": 18995,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.homerenergy.com/products/pro/docs/latest/component_library.html",
+      "http": 200,
+      "contentType": "text/html",
+      "finalUrl": "https://homerenergy.com/products/pro/docs/latest/component_library.html",
+      "bytes": 21635,
+      "pdfLinks": 0,
+      "htmlTables": 2,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.honda.ca/en/generators",
+      "http": 404,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.honda.ca/en/generators",
+      "bytes": 20948,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.junteks.com/",
+      "http": 200,
+      "contentType": "text/html",
+      "finalUrl": "https://www.junteks.com/",
+      "bytes": 901,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.junteks.com/products",
+      "http": 200,
+      "contentType": "text/html",
+      "finalUrl": "https://www.junteks.com/products",
+      "bytes": 901,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.kohlerhomeenergy.rehlko.com/generators/home-generators/20-kw-home-generator",
+      "http": 404,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.kohlerhomeenergy.rehlko.com/generators/home-generators/20-kw-home-generator",
+      "bytes": 116962,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.kohlerpower.com/",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.rehlko.com/",
+      "bytes": 769082,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.litime.com/",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.litime.com/",
+      "bytes": 1201514,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "shopify"
+      ]
+    },
+    {
+      "url": "https://www.litime.com/pages/user-manuals",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.litime.com/pages/user-manuals",
+      "bytes": 1314495,
+      "pdfLinks": 100,
+      "htmlTables": 0,
+      "platformHints": [
+        "shopify"
+      ]
+    },
+    {
+      "url": "https://www.litime.com/products.json?limit=2",
+      "http": 200,
+      "contentType": "application/json; charset=utf-8",
+      "finalUrl": "https://www.litime.com/products.json?limit=2",
+      "bytes": 20825,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "shopify"
+      ]
+    },
+    {
+      "url": "https://www.luxpowertek.com/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://luxpowertek.com/",
+      "bytes": 379758,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress"
+      ]
+    },
+    {
+      "url": "https://www.luxpowertek.com/download/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://luxpowertek.com/download/",
+      "bytes": 271020,
+      "pdfLinks": 58,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress"
+      ]
+    },
+    {
+      "url": "https://www.magnum-dimensions.com/downloads/written-specifications",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.magnum-dimensions.com/downloads/written-specifications",
+      "bytes": 106397,
+      "pdfLinks": 7,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.midnitesolar.com/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.midnitesolar.com/",
+      "bytes": 45275,
+      "pdfLinks": 2,
+      "htmlTables": 10,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.midnitesolar.com/productPhoto.php?product_ID=44",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.midnitesolar.com/index.php",
+      "bytes": 45275,
+      "pdfLinks": 2,
+      "htmlTables": 10,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.midnitesolar.com/products.php",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.midnitesolar.com/products.php",
+      "bytes": 25958,
+      "pdfLinks": 3,
+      "htmlTables": 1,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.midnitesolar.com/productsAll.php",
+      "http": 404,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.midnitesolar.com/productsAll.php",
+      "bytes": 16,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.mkbattery.com/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.mkbattery.com/",
+      "bytes": 295401,
+      "pdfLinks": 2,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress",
+        "woocommerce"
+      ]
+    },
+    {
+      "url": "https://www.mkbattery.com/product-category/solar/",
+      "http": 404,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.mkbattery.com/product-category/solar/",
+      "bytes": 353870,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress",
+        "woocommerce"
+      ]
+    },
+    {
+      "url": "https://www.mkbattery.com/solar",
+      "http": 404,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.mkbattery.com/downloads/solar-complete-line-brochure-1460/",
+      "bytes": 353870,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress",
+        "woocommerce"
+      ]
+    },
+    {
+      "url": "https://www.morningstarcorp.com/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.morningstarcorp.com/",
+      "bytes": 222719,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress"
+      ]
+    },
+    {
+      "url": "https://www.morningstarcorp.com/product-document-library/",
+      "http": 404,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.morningstarcorp.com/product-document-library/",
+      "bytes": 168496,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress"
+      ]
+    },
+    {
+      "url": "https://www.morningstarcorp.com/products/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.morningstarcorp.com/products/",
+      "bytes": 199109,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress"
+      ]
+    },
+    {
+      "url": "https://www.morningstarcorp.com/products/tristar-mppt/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.morningstarcorp.com/products/tristar-mppt/",
+      "bytes": 225385,
+      "pdfLinks": 15,
+      "htmlTables": 1,
+      "platformHints": [
+        "wordpress"
+      ]
+    },
+    {
+      "url": "https://www.mppsolar.com/v3/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.mppsolar.com/v3/",
+      "bytes": 210292,
+      "pdfLinks": 2,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress"
+      ]
+    },
+    {
+      "url": "https://www.mppsolar.com/v3/download/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.mppsolar.com/v3/download/",
+      "bytes": 316634,
+      "pdfLinks": 138,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress"
+      ]
+    },
+    {
+      "url": "https://www.pv-magazine.com/product-database/",
+      "http": 404,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.pv-magazine.com/product-database/",
+      "bytes": 86679,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress"
+      ]
+    },
+    {
+      "url": "https://www.regulations.doe.gov/certification-data",
+      "http": 200,
+      "contentType": "text/html",
+      "finalUrl": "https://www.regulations.doe.gov/certification-data/",
+      "bytes": 14517,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.regulations.doe.gov/certification-data/",
+      "http": 200,
+      "contentType": "text/html",
+      "finalUrl": "https://www.regulations.doe.gov/certification-data/",
+      "bytes": 14517,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.relionbattery.com/products",
+      "http": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.relionbattery.com/products",
+      "bytes": 4578,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.renogy.com/collections/inverters",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.renogy.com/collections/inverters",
+      "bytes": 2254002,
+      "pdfLinks": 1,
+      "htmlTables": 0,
+      "platformHints": [
+        "shopify"
+      ]
+    },
+    {
+      "url": "https://www.renogy.com/pages/download-center",
+      "http": 404,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.renogy.com/pages/download-center",
+      "bytes": 2055814,
+      "pdfLinks": 1,
+      "htmlTables": 0,
+      "platformHints": [
+        "shopify"
+      ]
+    },
+    {
+      "url": "https://www.renogy.com/pages/manuals",
+      "http": 404,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.renogy.com/pages/manuals",
+      "bytes": 2055814,
+      "pdfLinks": 1,
+      "htmlTables": 0,
+      "platformHints": [
+        "shopify"
+      ]
+    },
+    {
+      "url": "https://www.renogy.com/pages/manuals-download",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.renogy.com/pages/manuals-download",
+      "bytes": 2272499,
+      "pdfLinks": 1,
+      "htmlTables": 0,
+      "platformHints": [
+        "shopify",
+        "bigcommerce"
+      ]
+    },
+    {
+      "url": "https://www.se.com/us/en/product-range/66297-xw-pro/",
+      "http": 403,
+      "contentType": "text/html",
+      "finalUrl": "https://www.se.com/us/en/product-range/66297-xw-pro/",
+      "bytes": 423,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.simpliphipower.com/",
+      "http": 0,
+      "contentType": "",
+      "finalUrl": "https://www.simpliphipower.com/",
+      "bytes": 0,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.solardesigntool.com/components/",
+      "http": 0,
+      "contentType": "",
+      "finalUrl": "https://www.solardesigntool.com/components/",
+      "bytes": 0,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.srnesolar.com/download/Download.html",
+      "http": 200,
+      "contentType": "text/html",
+      "finalUrl": "https://www.srnesolar.com/download/Download.html",
+      "bytes": 191278,
+      "pdfLinks": 9,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.sunsynk.org/",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.sunsynk.org/",
+      "bytes": 1663641,
+      "pdfLinks": 6,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.sunsynk.org/downloads",
+      "http": 404,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.sunsynk.org/downloads",
+      "bytes": 499341,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.thornwave.com/products.json?limit=2",
+      "http": 200,
+      "contentType": "application/json; charset=utf-8",
+      "finalUrl": "https://www.thornwave.com/products.json?limit=2",
+      "bytes": 4087,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "shopify"
+      ]
+    },
+    {
+      "url": "https://www.trojanbattery.com/products/technology/flooded",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.trojanbattery.com/products/technology/flooded",
+      "bytes": 200186,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.usbattery.com/deep-cycle-batteries/",
+      "http": 404,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.usbattery.com/deep-cycle-batteries/",
+      "bytes": 156262,
+      "pdfLinks": 3,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress"
+      ]
+    },
+    {
+      "url": "https://www.usbattery.com/us-2200-xc2/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.usbattery.com/us-2200-xc2/",
+      "bytes": 283369,
+      "pdfLinks": 4,
+      "htmlTables": 1,
+      "platformHints": [
+        "wordpress"
+      ]
+    },
+    {
+      "url": "https://www.victronenergy.com/batteries",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.victronenergy.com/batteries",
+      "bytes": 234303,
+      "pdfLinks": 1,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.victronenergy.com/batteries/agm-and-gel-batteries",
+      "http": 404,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.victronenergy.com/batteries/agm-and-gel-batteries",
+      "bytes": 74194,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.victronenergy.com/batteries/lithium-battery-12-8v",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.victronenergy.com/batteries/lithium-battery-12-8v",
+      "bytes": 616485,
+      "pdfLinks": 76,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.victronenergy.com/inverters-chargers/multiplus-ii",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.victronenergy.com/inverters-chargers/multiplus-ii",
+      "bytes": 1242139,
+      "pdfLinks": 172,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.victronenergy.com/live/battery_compatibility:start",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "finalUrl": "https://www.victronenergy.com/live/battery_compatibility:start",
+      "bytes": 27491,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.victronenergy.com/media/pg/BMV-712_Smart/en/technical-data.html",
+      "http": 200,
+      "contentType": "text/html",
+      "finalUrl": "https://www.victronenergy.com/media/pg/BMV-712_Smart/en/technical-data.html",
+      "bytes": 59174,
+      "pdfLinks": 0,
+      "htmlTables": 1,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.victronenergy.com/media/pg/Lithium_Battery_Smart/en/technical-data.html",
+      "http": 200,
+      "contentType": "text/html",
+      "finalUrl": "https://www.victronenergy.com/media/pg/Lithium_Battery_Smart/en/technical-data.html",
+      "bytes": 50927,
+      "pdfLinks": 0,
+      "htmlTables": 1,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.victronenergy.com/media/pg/Orion-Tr_Smart_DC-DC_Charger_Isolated/en/technical-data.html",
+      "http": 404,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.victronenergy.com/media/pg/Orion-Tr_Smart_DC-DC_Charger_Isolated/en/technical-data.html",
+      "bytes": 95209,
+      "pdfLinks": 1,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.victronenergy.com/media/pg/Phoenix_Inverter_Smart/en/technical-specifications.html",
+      "http": 404,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.victronenergy.com/media/pg/Phoenix_Inverter_Smart/en/technical-specifications.html",
+      "bytes": 95094,
+      "pdfLinks": 1,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.victronenergy.com/media/pg/Quattro/en/technical-specifications.html",
+      "http": 404,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://www.victronenergy.com/media/pg/Quattro/en/technical-specifications.html",
+      "bytes": 94749,
+      "pdfLinks": 1,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.victronenergy.com/upload/documents/Datasheet-MultiPlus-II-120V-EN-.pdf",
+      "http": 200,
+      "contentType": "application/pdf",
+      "finalUrl": "https://www.victronenergy.com/upload/documents/Datasheet-MultiPlus-II-120V-EN-.pdf",
+      "bytes": 552588,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": []
+    },
+    {
+      "url": "https://www.yamaha-motor.ca/en/power-equipment/generator/inverter-series/ef6300isde/EF6300ISDE",
+      "http": 200,
+      "contentType": "text/html",
+      "finalUrl": "https://www.yamaha-motor.ca/en/power-equipment/generator/inverter-series/ef6300isde/EF6300ISDE",
+      "bytes": 2015354,
+      "pdfLinks": 0,
+      "htmlTables": 3,
+      "platformHints": []
+    },
+    {
+      "url": "https://xantrex.com/library/inverter-chargers/",
+      "http": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "finalUrl": "https://xantrex.com/library/inverter-chargers/",
+      "bytes": 349180,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress"
+      ]
+    },
+    {
+      "url": "https://xantrex.com/wp-json/wp/v2/types",
+      "http": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "finalUrl": "https://xantrex.com/wp-json/wp/v2/types",
+      "bytes": 20947,
+      "pdfLinks": 0,
+      "htmlTables": 0,
+      "platformHints": [
+        "wordpress"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# CEC workbook fixture
+
+`rows.json` is a read-only extraction of the first 15 physical rows of the Battery worksheet from the CEC workbook pinned in `knowledge/cec-batteries-source.json`. It includes the original notices, two header rows and three product records. Tests deliberately mutate copies to exercise missing fields, invalid ratings, unit drift and the distinction between certification standard and certifying body. Full source attribution: California Energy Commission, [Battery List](https://solarequipment.energy.ca.gov/Home/BatteryList), data revision 2026-09-01, downloaded 2026-09-08.

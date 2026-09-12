@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/origin89hq/origin89",
+  "commit": "7dc27cd9e5f7f7ae67b519b037ca600265012d1e",
+  "files": {
+    "crates/o89-core/src/dialects.rs": {
+      "archive": "controller-dialects.rs",
+      "sha256": "e98c0a42c3e62b03a8bd3211a7165daeb042a75d7b0f67813b7ae8904a78e1be"
+    }
+  }
+}

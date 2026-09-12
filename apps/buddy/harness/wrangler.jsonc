@@ -1,0 +1,12 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "origin89-buddy-local-evaluation",
+  "main": "../src/eval-worker.ts",
+  "compatibility_date": "2026-09-08",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": false,
+  "preview_urls": false,
+  "ai": { "binding": "AI", "remote": true },
+  // Evaluation reads the same active catalogue as Buddy; it never writes to it.
+  "d1_databases": [{ "binding": "KNOWLEDGE", "database_name": "origin89-equipment-knowledge", "migrations_dir": "../migrations" }]
+}

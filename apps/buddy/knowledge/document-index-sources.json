@@ -1,0 +1,130 @@
+{
+  "id": "document-indexes",
+  "checkedAt": "2026-09-08",
+  "makers": {
+    "eg4": {
+      "site": "https://eg4electronics.com",
+      "pages": [
+        {
+          "url": "https://eg4electronics.com/wp-json/wp/v2/media?media_type=application&per_page=100&page=1&_fields=id,title,source_url,mime_type,date,modified",
+          "file": "ab062e3c0074da5fe5b639edba8995ecc26593813631a04b7fa86bd9530b3026.json",
+          "sha256": "ab062e3c0074da5fe5b639edba8995ecc26593813631a04b7fa86bd9530b3026",
+          "bytes": 30936,
+          "total": 612
+        },
+        {
+          "url": "https://eg4electronics.com/wp-json/wp/v2/media?media_type=application&per_page=100&page=2&_fields=id,title,source_url,mime_type,date,modified",
+          "file": "d7740be80d8c47e083f8a9a83bb7b540f406084f01915cd3c58790c8019669a5.json",
+          "sha256": "d7740be80d8c47e083f8a9a83bb7b540f406084f01915cd3c58790c8019669a5",
+          "bytes": 31836,
+          "total": 612
+        },
+        {
+          "url": "https://eg4electronics.com/wp-json/wp/v2/media?media_type=application&per_page=100&page=3&_fields=id,title,source_url,mime_type,date,modified",
+          "file": "bd48ba9ca750ea7968910397469e673f84e1566784fc68781f3ef60b4033c2cd.json",
+          "sha256": "bd48ba9ca750ea7968910397469e673f84e1566784fc68781f3ef60b4033c2cd",
+          "bytes": 30496,
+          "total": 612
+        },
+        {
+          "url": "https://eg4electronics.com/wp-json/wp/v2/media?media_type=application&per_page=100&page=4&_fields=id,title,source_url,mime_type,date,modified",
+          "file": "4fa3945f2898d0d64a899215b0cc2a8993b382f2662f46a3ade1011914969019.json",
+          "sha256": "4fa3945f2898d0d64a899215b0cc2a8993b382f2662f46a3ade1011914969019",
+          "bytes": 29561,
+          "total": 612
+        },
+        {
+          "url": "https://eg4electronics.com/wp-json/wp/v2/media?media_type=application&per_page=100&page=5&_fields=id,title,source_url,mime_type,date,modified",
+          "file": "332602bbf478ed28a01e2854a7c7d93a1bb60b4b682dad49c9c7b6addd840ebe.json",
+          "sha256": "332602bbf478ed28a01e2854a7c7d93a1bb60b4b682dad49c9c7b6addd840ebe",
+          "bytes": 28446,
+          "total": 612
+        },
+        {
+          "url": "https://eg4electronics.com/wp-json/wp/v2/media?media_type=application&per_page=100&page=6&_fields=id,title,source_url,mime_type,date,modified",
+          "file": "fefbb02eedba5109a4d12f36322c2fe970e5ffe49c303b39b4e7abe0add93faf.json",
+          "sha256": "fefbb02eedba5109a4d12f36322c2fe970e5ffe49c303b39b4e7abe0add93faf",
+          "bytes": 29604,
+          "total": 612
+        },
+        {
+          "url": "https://eg4electronics.com/wp-json/wp/v2/media?media_type=application&per_page=100&page=7&_fields=id,title,source_url,mime_type,date,modified",
+          "file": "e0dca44988b5a68e5f7eab5959064b8ae7449766653de7cc3ba9b5f3def02032.json",
+          "sha256": "e0dca44988b5a68e5f7eab5959064b8ae7449766653de7cc3ba9b5f3def02032",
+          "bytes": 3185,
+          "total": 612
+        }
+      ],
+      "documents": 545
+    },
+    "xantrex": {
+      "site": "https://xantrex.com",
+      "pages": [
+        {
+          "url": "https://xantrex.com/wp-json/wp/v2/docs?per_page=100&page=1&_fields=id,title,link,content,parent,modified",
+          "file": "7d080705b48c31ff7901b18f2f5ac2d6327a38a16495b6ede56c7c81b9c4e371.json",
+          "sha256": "7d080705b48c31ff7901b18f2f5ac2d6327a38a16495b6ede56c7c81b9c4e371",
+          "bytes": 116077,
+          "total": 853
+        },
+        {
+          "url": "https://xantrex.com/wp-json/wp/v2/docs?per_page=100&page=2&_fields=id,title,link,content,parent,modified",
+          "file": "868bcfda8ae11aeeb7292060c949c9291c4a261e92595c3812fc1053e0ee45bd.json",
+          "sha256": "868bcfda8ae11aeeb7292060c949c9291c4a261e92595c3812fc1053e0ee45bd",
+          "bytes": 236330,
+          "total": 853
+        },
+        {
+          "url": "https://xantrex.com/wp-json/wp/v2/docs?per_page=100&page=3&_fields=id,title,link,content,parent,modified",
+          "file": "a8c59273ec1eaa5c6d0f28079157c44f03623ec104c5aa40a7418d794c00088f.json",
+          "sha256": "a8c59273ec1eaa5c6d0f28079157c44f03623ec104c5aa40a7418d794c00088f",
+          "bytes": 84795,
+          "total": 853
+        },
+        {
+          "url": "https://xantrex.com/wp-json/wp/v2/docs?per_page=100&page=4&_fields=id,title,link,content,parent,modified",
+          "file": "8518c36fb09b89424a71b1209e98c7694c26740cc9018ef7f675b1a806d29722.json",
+          "sha256": "8518c36fb09b89424a71b1209e98c7694c26740cc9018ef7f675b1a806d29722",
+          "bytes": 95151,
+          "total": 853
+        },
+        {
+          "url": "https://xantrex.com/wp-json/wp/v2/docs?per_page=100&page=5&_fields=id,title,link,content,parent,modified",
+          "file": "dd8049b62a8dfe1099f8b5582d9708993b009c8d2d03a68024e22be0d928da0f.json",
+          "sha256": "dd8049b62a8dfe1099f8b5582d9708993b009c8d2d03a68024e22be0d928da0f",
+          "bytes": 78921,
+          "total": 853
+        },
+        {
+          "url": "https://xantrex.com/wp-json/wp/v2/docs?per_page=100&page=6&_fields=id,title,link,content,parent,modified",
+          "file": "c55f052207ef53598ed07a7829f3795f17e989337eb15fe9e417f92ee57f1f52.json",
+          "sha256": "c55f052207ef53598ed07a7829f3795f17e989337eb15fe9e417f92ee57f1f52",
+          "bytes": 109075,
+          "total": 853
+        },
+        {
+          "url": "https://xantrex.com/wp-json/wp/v2/docs?per_page=100&page=7&_fields=id,title,link,content,parent,modified",
+          "file": "6a3e66146cec32a456d0f214a4037ebbb42857838f8bf04dbc5a8179b293c4e8.json",
+          "sha256": "6a3e66146cec32a456d0f214a4037ebbb42857838f8bf04dbc5a8179b293c4e8",
+          "bytes": 109683,
+          "total": 853
+        },
+        {
+          "url": "https://xantrex.com/wp-json/wp/v2/docs?per_page=100&page=8&_fields=id,title,link,content,parent,modified",
+          "file": "b5cd53b9190a57bb027071f9699f788b1833a362cc14f01465ad544d6affe5d4.json",
+          "sha256": "b5cd53b9190a57bb027071f9699f788b1833a362cc14f01465ad544d6affe5d4",
+          "bytes": 102680,
+          "total": 853
+        },
+        {
+          "url": "https://xantrex.com/wp-json/wp/v2/docs?per_page=100&page=9&_fields=id,title,link,content,parent,modified",
+          "file": "0d54f6f4b023b7e305b76583ee7fade2d86bf622df7dd87f830d74f3a8a27382.json",
+          "sha256": "0d54f6f4b023b7e305b76583ee7fade2d86bf622df7dd87f830d74f3a8a27382",
+          "bytes": 23885,
+          "total": 853
+        }
+      ],
+      "documents": 567
+    }
+  }
+}

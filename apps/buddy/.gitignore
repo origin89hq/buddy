@@ -1,0 +1,7 @@
+.wrangler/
+worker-configuration.d.ts
+test-results/
+harness/*.local.json
+knowledge/generated/
+knowledge/sources/
+wrangler.deploy.json

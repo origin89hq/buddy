@@ -1,0 +1,1299 @@
+[
+{
+"page": 2,
+"width": 612,
+"lines": [
+{
+"top": 89.2,
+"text": "SP\u00c9CIFICATIONS \u00c9LECTRIQUES SSPP\u00c9\u00c9CCIIFFIICCAATTIIOONNSS DD'EE NTETMREPP\u00c9ORASATUGREES",
+"words": [
+{
+"text": "SP\u00c9CIFICATIONS",
+"x0": 26.1,
+"x1": 119.4
+},
+{
+"text": "\u00c9LECTRIQUES",
+"x0": 122.4,
+"x1": 200.3
+},
+{
+"text": "SSPP\u00c9\u00c9CCIIFFIICCAATTIIOONNSS",
+"x0": 326.5,
+"x1": 419.8
+},
+{
+"text": "DD'EE",
+"x0": 422.8,
+"x1": 441.3
+},
+{
+"text": "NTETMREPP\u00c9ORASATUGREES",
+"x0": 441.3,
+"x1": 532.8
+}
+]
+},
+{
+"top": 120.5,
+"text": "Voltage 12.8 volt TTeemmpp\u00e9\u00e9rraattuurree dd\u2019\u2019eennttrreeppoossaaggee DDee -- 2200 \u00e0\u00e0 4455 \u00b0\u00b0CC",
+"words": [
+{
+"text": "Voltage",
+"x0": 26.1,
+"x1": 55.9
+},
+{
+"text": "12.8",
+"x0": 216.5,
+"x1": 234.3
+},
+{
+"text": "volt",
+"x0": 236.4,
+"x1": 251.4
+},
+{
+"text": "TTeemmpp\u00e9\u00e9rraattuurree",
+"x0": 326.5,
+"x1": 376.6
+},
+{
+"text": "dd\u2019\u2019eennttrreeppoossaaggee",
+"x0": 378.9,
+"x1": 434.4
+},
+{
+"text": "DDee",
+"x0": 503.7,
+"x1": 515.2
+},
+{
+"text": "--",
+"x0": 517.5,
+"x1": 520.9
+},
+{
+"text": "2200",
+"x0": 523.1,
+"x1": 533.6
+},
+{
+"text": "\u00e0\u00e0",
+"x0": 535.8,
+"x1": 540.3
+},
+{
+"text": "4455",
+"x0": 542.6,
+"x1": 553.0
+},
+{
+"text": "\u00b0\u00b0CC",
+"x0": 555.3,
+"x1": 565.0
+}
+]
+},
+{
+"top": 148.3,
+"text": "Capacit\u00e9 200 Ah VVoollttaaggee dd''eennttrreeppoossaaggee DDee 1133..11VV \u00e0\u00e0 1133..33VV",
+"words": [
+{
+"text": "Capacit\u00e9",
+"x0": 26.1,
+"x1": 60.6
+},
+{
+"text": "200",
+"x0": 219.6,
+"x1": 235.2
+},
+{
+"text": "Ah",
+"x0": 237.2,
+"x1": 248.4
+},
+{
+"text": "VVoollttaaggee",
+"x0": 324.1,
+"x1": 354.0
+},
+{
+"text": "dd''eennttrreeppoossaaggee",
+"x0": 356.2,
+"x1": 411.8
+},
+{
+"text": "DDee",
+"x0": 499.2,
+"x1": 510.7
+},
+{
+"text": "1133..11VV",
+"x0": 513.0,
+"x1": 536.9
+},
+{
+"text": "\u00e0\u00e0",
+"x0": 538.8,
+"x1": 543.3
+},
+{
+"text": "1133..33VV",
+"x0": 545.6,
+"x1": 569.5
+}
+]
+},
+{
+"top": 176.6,
+"text": "Capacit\u00e9 @ 20A 600 min",
+"words": [
+{
+"text": "Capacit\u00e9",
+"x0": 26.1,
+"x1": 60.6
+},
+{
+"text": "@",
+"x0": 62.9,
+"x1": 70.4
+},
+{
+"text": "20A",
+"x0": 72.7,
+"x1": 89.3
+},
+{
+"text": "600",
+"x0": 217.7,
+"x1": 233.3
+},
+{
+"text": "min",
+"x0": 235.6,
+"x1": 250.2
+}
+]
+},
+{
+"top": 203.4,
+"text": "\u00c9nergie 2560 Wh SP\u00c9CIFICATIONS COMMUNICATIONS",
+"words": [
+{
+"text": "\u00c9nergie",
+"x0": 26.1,
+"x1": 55.8
+},
+{
+"text": "2560",
+"x0": 215.3,
+"x1": 236.2
+},
+{
+"text": "Wh",
+"x0": 238.3,
+"x1": 252.7
+},
+{
+"text": "SP\u00c9CIFICATIONS",
+"x0": 322.5,
+"x1": 415.8
+},
+{
+"text": "COMMUNICATIONS",
+"x0": 418.8,
+"x1": 531.3
+}
+]
+},
+{
+"top": 231.7,
+"text": "Auto-d\u00e9charge <3% par mois",
+"words": [
+{
+"text": "Auto-d\u00e9charge",
+"x0": 26.1,
+"x1": 85.1
+},
+{
+"text": "<3%",
+"x0": 207.2,
+"x1": 224.9
+},
+{
+"text": "par",
+"x0": 227.2,
+"x1": 240.0
+},
+{
+"text": "mois",
+"x0": 242.1,
+"x1": 260.7
+}
+]
+},
+{
+"top": 236.6,
+"text": "En option",
+"words": [
+{
+"text": "En",
+"x0": 511.3,
+"x1": 521.4
+},
+{
+"text": "option",
+"x0": 523.6,
+"x1": 549.5
+}
+]
+},
+{
+"top": 245.4,
+"text": "Bluetooth (Accessoire Dongle)",
+"words": [
+{
+"text": "Bluetooth",
+"x0": 322.5,
+"x1": 361.9
+},
+{
+"text": "(Accessoire",
+"x0": 491.6,
+"x1": 536.2
+},
+{
+"text": "Dongle)",
+"x0": 538.5,
+"x1": 569.2
+}
+]
+},
+{
+"top": 262.0,
+"text": "Unit\u00e9 maximum en s\u00e9rie 4",
+"words": [
+{
+"text": "Unit\u00e9",
+"x0": 26.1,
+"x1": 47.8
+},
+{
+"text": "maximum",
+"x0": 50.1,
+"x1": 88.6
+},
+{
+"text": "en",
+"x0": 90.9,
+"x1": 100.7
+},
+{
+"text": "s\u00e9rie",
+"x0": 102.9,
+"x1": 121.8
+},
+{
+"text": "4",
+"x0": 231.4,
+"x1": 236.6
+}
+]
+},
+{
+"top": 273.4,
+"text": "Ports de communications RS485",
+"words": [
+{
+"text": "Ports",
+"x0": 322.5,
+"x1": 343.3
+},
+{
+"text": "de",
+"x0": 345.6,
+"x1": 355.4
+},
+{
+"text": "communications",
+"x0": 357.7,
+"x1": 422.6
+},
+{
+"text": "RS485",
+"x0": 517.3,
+"x1": 543.5
+}
+]
+},
+{
+"top": 293.0,
+"text": "Unit\u00e9 maximum en parall\u00e8le 4",
+"words": [
+{
+"text": "Unit\u00e9",
+"x0": 26.1,
+"x1": 47.8
+},
+{
+"text": "maximum",
+"x0": 50.1,
+"x1": 88.6
+},
+{
+"text": "en",
+"x0": 90.9,
+"x1": 100.7
+},
+{
+"text": "parall\u00e8le",
+"x0": 102.9,
+"x1": 136.2
+},
+{
+"text": "4",
+"x0": 231.4,
+"x1": 236.6
+}
+]
+},
+{
+"top": 300.6,
+"text": "\u00c9cran LCD Non",
+"words": [
+{
+"text": "\u00c9cran",
+"x0": 322.5,
+"x1": 344.5
+},
+{
+"text": "LCD",
+"x0": 346.8,
+"x1": 364.0
+},
+{
+"text": "Non",
+"x0": 522.0,
+"x1": 538.9
+}
+]
+},
+{
+"top": 329.2,
+"text": "CAN Hub communication",
+"words": [
+{
+"text": "CAN",
+"x0": 322.5,
+"x1": 341.5
+},
+{
+"text": "Hub",
+"x0": 343.8,
+"x1": 360.7
+},
+{
+"text": "communication",
+"x0": 362.9,
+"x1": 423.9
+}
+]
+},
+{
+"top": 334.2,
+"text": "Compatible",
+"words": [
+{
+"text": "Compatible",
+"x0": 507.6,
+"x1": 553.2
+}
+]
+},
+{
+"top": 339.2,
+"text": "(VE.CAN)",
+"words": [
+{
+"text": "(VE.CAN)",
+"x0": 322.5,
+"x1": 359.7
+}
+]
+},
+{
+"top": 349.1,
+"text": "SP\u00c9CIFICATIONS DE CHARGE",
+"words": [
+{
+"text": "SP\u00c9CIFICATIONS",
+"x0": 30.0,
+"x1": 123.3
+},
+{
+"text": "DE",
+"x0": 126.4,
+"x1": 142.4
+},
+{
+"text": "CHARGE",
+"x0": 145.4,
+"x1": 193.9
+}
+]
+},
+{
+"top": 380.4,
+"text": "Courant de charge recommand\u00e9 5 A - 80 A",
+"words": [
+{
+"text": "Courant",
+"x0": 30.0,
+"x1": 62.1
+},
+{
+"text": "de",
+"x0": 64.3,
+"x1": 74.1
+},
+{
+"text": "charge",
+"x0": 76.4,
+"x1": 102.8
+},
+{
+"text": "recommand\u00e9",
+"x0": 105.1,
+"x1": 156.6
+},
+{
+"text": "5",
+"x0": 218.4,
+"x1": 223.6
+},
+{
+"text": "A",
+"x0": 225.6,
+"x1": 231.7
+},
+{
+"text": "-",
+"x0": 233.7,
+"x1": 237.0
+},
+{
+"text": "80",
+"x0": 239.3,
+"x1": 249.7
+},
+{
+"text": "A",
+"x0": 251.7,
+"x1": 257.8
+}
+]
+},
+{
+"top": 395.3,
+"text": "SP\u00c9CIFICATIONS DE CHAUFFAGE",
+"words": [
+{
+"text": "SP\u00c9CIFICATIONS",
+"x0": 326.5,
+"x1": 419.8
+},
+{
+"text": "DE",
+"x0": 422.8,
+"x1": 438.9
+},
+{
+"text": "CHAUFFAGE",
+"x0": 441.9,
+"x1": 512.4
+}
+]
+},
+{
+"top": 398.6,
+"text": "(OPTIONNEL)",
+"words": [
+{
+"text": "(OPTIONNEL)",
+"x0": 515.4,
+"x1": 571.7
+}
+]
+},
+{
+"top": 413.3,
+"text": "Courant de charge maximum 150 A",
+"words": [
+{
+"text": "Courant",
+"x0": 30.0,
+"x1": 62.0
+},
+{
+"text": "de",
+"x0": 64.3,
+"x1": 74.1
+},
+{
+"text": "charge",
+"x0": 76.4,
+"x1": 102.8
+},
+{
+"text": "maximum",
+"x0": 105.1,
+"x1": 143.6
+},
+{
+"text": "150",
+"x0": 226.2,
+"x1": 241.9
+},
+{
+"text": "A",
+"x0": 243.8,
+"x1": 250.0
+}
+]
+},
+{
+"top": 427.4,
+"text": "Temp\u00e9rature d'activation De -35 \u00e0 11 \u00b0C",
+"words": [
+{
+"text": "Temp\u00e9rature",
+"x0": 326.5,
+"x1": 376.6
+},
+{
+"text": "d'activation",
+"x0": 378.9,
+"x1": 424.8
+},
+{
+"text": "De",
+"x0": 504.8,
+"x1": 516.4
+},
+{
+"text": "-35",
+"x0": 518.6,
+"x1": 532.4
+},
+{
+"text": "\u00e0",
+"x0": 534.7,
+"x1": 539.2
+},
+{
+"text": "11",
+"x0": 541.5,
+"x1": 551.9
+},
+{
+"text": "\u00b0C",
+"x0": 554.2,
+"x1": 563.9
+}
+]
+},
+{
+"top": 439.3,
+"text": "14.2 V - 14.6 V (Bulk)",
+"words": [
+{
+"text": "14.2",
+"x0": 196.1,
+"x1": 213.9
+},
+{
+"text": "V",
+"x0": 215.8,
+"x1": 222.0
+},
+{
+"text": "-",
+"x0": 223.9,
+"x1": 227.3
+},
+{
+"text": "14.6",
+"x0": 229.5,
+"x1": 247.3
+},
+{
+"text": "V",
+"x0": 249.3,
+"x1": 255.4
+},
+{
+"text": "(Bulk)",
+"x0": 257.3,
+"x1": 279.7
+}
+]
+},
+{
+"top": 445.8,
+"text": "Voltage de charge recommand\u00e9",
+"words": [
+{
+"text": "Voltage",
+"x0": 30.0,
+"x1": 59.9
+},
+{
+"text": "de",
+"x0": 62.2,
+"x1": 72.0
+},
+{
+"text": "charge",
+"x0": 74.3,
+"x1": 100.7
+},
+{
+"text": "recommand\u00e9",
+"x0": 103.0,
+"x1": 154.4
+}
+]
+},
+{
+"top": 450.1,
+"text": "13.6 V (Float)",
+"words": [
+{
+"text": "13.6",
+"x0": 211.6,
+"x1": 229.4
+},
+{
+"text": "V",
+"x0": 231.3,
+"x1": 237.5
+},
+{
+"text": "(Float)",
+"x0": 239.4,
+"x1": 264.3
+}
+]
+},
+{
+"top": 454.4,
+"text": "Courant requis pour activation 9 A",
+"words": [
+{
+"text": "Courant",
+"x0": 324.1,
+"x1": 356.1
+},
+{
+"text": "requis",
+"x0": 358.4,
+"x1": 382.4
+},
+{
+"text": "pour",
+"x0": 384.7,
+"x1": 403.2
+},
+{
+"text": "activation",
+"x0": 405.3,
+"x1": 444.5
+},
+{
+"text": "9",
+"x0": 525.5,
+"x1": 530.7
+},
+{
+"text": "A",
+"x0": 532.7,
+"x1": 538.8
+}
+]
+},
+{
+"top": 481.9,
+"text": "Courant utilis\u00e9 pour le chauffage 6.7 A",
+"words": [
+{
+"text": "Courant",
+"x0": 324.1,
+"x1": 356.1
+},
+{
+"text": "utilis\u00e9",
+"x0": 358.4,
+"x1": 382.0
+},
+{
+"text": "pour",
+"x0": 384.3,
+"x1": 402.8
+},
+{
+"text": "le",
+"x0": 404.9,
+"x1": 411.8
+},
+{
+"text": "chauffage",
+"x0": 414.1,
+"x1": 452.8
+},
+{
+"text": "6.7",
+"x0": 521.8,
+"x1": 534.4
+},
+{
+"text": "A",
+"x0": 536.3,
+"x1": 542.5
+}
+]
+},
+{
+"top": 506.4,
+"text": "SP\u00c9CIFICATIONS DE D\u00c9CHARGE",
+"words": [
+{
+"text": "SP\u00c9CIFICATIONS",
+"x0": 27.6,
+"x1": 120.9
+},
+{
+"text": "DE",
+"x0": 123.9,
+"x1": 139.9
+},
+{
+"text": "D\u00c9CHARGE",
+"x0": 143.0,
+"x1": 207.3
+}
+]
+},
+{
+"top": 511.5,
+"text": "Automatique +",
+"words": [
+{
+"text": "Automatique",
+"x0": 502.4,
+"x1": 554.1
+},
+{
+"text": "+",
+"x0": 556.4,
+"x1": 561.6
+}
+]
+},
+{
+"top": 517.0,
+"text": "Mode d'activation du syst\u00e8me",
+"words": [
+{
+"text": "Mode",
+"x0": 324.1,
+"x1": 347.3
+},
+{
+"text": "d'activation",
+"x0": 349.6,
+"x1": 395.5
+},
+{
+"text": "du",
+"x0": 397.8,
+"x1": 407.9
+},
+{
+"text": "syst\u00e8me",
+"x0": 410.1,
+"x1": 442.6
+}
+]
+},
+{
+"top": 521.5,
+"text": "Manuel (Dual)",
+"words": [
+{
+"text": "Manuel",
+"x0": 504.3,
+"x1": 534.1
+},
+{
+"text": "(Dual)",
+"x0": 536.3,
+"x1": 559.6
+}
+]
+},
+{
+"top": 538.5,
+"text": "Courant de d\u00e9charge continue 150 A",
+"words": [
+{
+"text": "Courant",
+"x0": 27.6,
+"x1": 59.6
+},
+{
+"text": "de",
+"x0": 61.8,
+"x1": 71.7
+},
+{
+"text": "d\u00e9charge",
+"x0": 73.9,
+"x1": 110.2
+},
+{
+"text": "continue",
+"x0": 112.4,
+"x1": 147.2
+},
+{
+"text": "150",
+"x0": 223.7,
+"x1": 239.4
+},
+{
+"text": "A",
+"x0": 241.4,
+"x1": 247.5
+}
+]
+},
+{
+"top": 566.2,
+"text": "BMS - Voltage de d\u00e9connexion en d\u00e9charge 10 V",
+"words": [
+{
+"text": "BMS",
+"x0": 27.6,
+"x1": 46.7
+},
+{
+"text": "-",
+"x0": 49.0,
+"x1": 52.3
+},
+{
+"text": "Voltage",
+"x0": 54.3,
+"x1": 84.1
+},
+{
+"text": "de",
+"x0": 86.4,
+"x1": 96.2
+},
+{
+"text": "d\u00e9connexion",
+"x0": 98.5,
+"x1": 149.3
+},
+{
+"text": "en",
+"x0": 151.5,
+"x1": 161.3
+},
+{
+"text": "d\u00e9charge",
+"x0": 163.6,
+"x1": 199.9
+},
+{
+"text": "10",
+"x0": 226.4,
+"x1": 236.8
+},
+{
+"text": "V",
+"x0": 238.8,
+"x1": 244.9
+}
+]
+},
+{
+"top": 579.3,
+"text": "NOMBRE DE CYCLE SELON LE %",
+"words": [
+{
+"text": "NOMBRE",
+"x0": 326.5,
+"x1": 378.8
+},
+{
+"text": "DE",
+"x0": 384.8,
+"x1": 400.8
+},
+{
+"text": "CYCLE",
+"x0": 403.9,
+"x1": 440.1
+},
+{
+"text": "SELON",
+"x0": 443.1,
+"x1": 481.1
+},
+{
+"text": "LE",
+"x0": 484.2,
+"x1": 497.3
+},
+{
+"text": "%",
+"x0": 500.3,
+"x1": 510.0
+}
+]
+},
+{
+"top": 593.8,
+"text": "BMS - Voltage de reconnexion en d\u00e9charge 12 V DE D\u00c9CHARGE MOYEN D'UTILISATION",
+"words": [
+{
+"text": "BMS",
+"x0": 27.6,
+"x1": 46.7
+},
+{
+"text": "-",
+"x0": 49.0,
+"x1": 52.3
+},
+{
+"text": "Voltage",
+"x0": 54.3,
+"x1": 84.1
+},
+{
+"text": "de",
+"x0": 86.4,
+"x1": 96.2
+},
+{
+"text": "reconnexion",
+"x0": 98.5,
+"x1": 147.4
+},
+{
+"text": "en",
+"x0": 149.6,
+"x1": 159.4
+},
+{
+"text": "d\u00e9charge",
+"x0": 161.7,
+"x1": 197.9
+},
+{
+"text": "12",
+"x0": 226.4,
+"x1": 236.8
+},
+{
+"text": "V",
+"x0": 238.8,
+"x1": 244.9
+},
+{
+"text": "DE",
+"x0": 326.5,
+"x1": 342.5
+},
+{
+"text": "D\u00c9CHARGE",
+"x0": 345.5,
+"x1": 409.9
+},
+{
+"text": "MOYEN",
+"x0": 412.9,
+"x1": 457.0
+},
+{
+"text": "D'UTILISATION",
+"x0": 460.0,
+"x1": 543.6
+}
+]
+},
+{
+"top": 624.8,
+"text": "Protection de court circuit Oui D\u00e9charge \u00e0 30% 8200 < cycles",
+"words": [
+{
+"text": "Protection",
+"x0": 27.6,
+"x1": 69.2
+},
+{
+"text": "de",
+"x0": 71.4,
+"x1": 81.2
+},
+{
+"text": "court",
+"x0": 83.5,
+"x1": 104.4
+},
+{
+"text": "circuit",
+"x0": 106.7,
+"x1": 131.1
+},
+{
+"text": "Oui",
+"x0": 228.3,
+"x1": 242.7
+},
+{
+"text": "D\u00e9charge",
+"x0": 326.5,
+"x1": 364.4
+},
+{
+"text": "\u00e0",
+"x0": 366.7,
+"x1": 371.2
+},
+{
+"text": "30%",
+"x0": 373.5,
+"x1": 391.2
+},
+{
+"text": "8200",
+"x0": 507.1,
+"x1": 527.9
+},
+{
+"text": "<",
+"x0": 530.2,
+"x1": 535.4
+},
+{
+"text": "cycles",
+"x0": 537.7,
+"x1": 561.7
+}
+]
+},
+{
+"top": 658.4,
+"text": "D\u00e9charge \u00e0 80% 6000 < cycles",
+"words": [
+{
+"text": "D\u00e9charge",
+"x0": 326.5,
+"x1": 364.4
+},
+{
+"text": "\u00e0",
+"x0": 366.7,
+"x1": 371.2
+},
+{
+"text": "80%",
+"x0": 373.5,
+"x1": 391.2
+},
+{
+"text": "6000",
+"x0": 507.1,
+"x1": 527.9
+},
+{
+"text": "<",
+"x0": 530.2,
+"x1": 535.4
+},
+{
+"text": "cycles",
+"x0": 537.7,
+"x1": 561.7
+}
+]
+},
+{
+"top": 678.6,
+"text": "SP\u00c9CIFICATIONS DE TEMP\u00c9RATURES",
+"words": [
+{
+"text": "SP\u00c9CIFICATIONS",
+"x0": 30.0,
+"x1": 123.3
+},
+{
+"text": "DE",
+"x0": 126.4,
+"x1": 142.4
+},
+{
+"text": "TEMP\u00c9RATURES",
+"x0": 145.1,
+"x1": 236.4
+}
+]
+},
+{
+"top": 685.2,
+"text": "3500 < cycles",
+"words": [
+{
+"text": "3500",
+"x0": 507.1,
+"x1": 527.9
+},
+{
+"text": "<",
+"x0": 530.2,
+"x1": 535.4
+},
+{
+"text": "cycles",
+"x0": 537.7,
+"x1": 561.7
+}
+]
+},
+{
+"top": 690.1,
+"text": "D\u00e9charge \u00e0 100%",
+"words": [
+{
+"text": "D\u00e9charge",
+"x0": 326.5,
+"x1": 364.4
+},
+{
+"text": "\u00e0",
+"x0": 366.7,
+"x1": 371.2
+},
+{
+"text": "100%",
+"x0": 373.5,
+"x1": 396.4
+}
+]
+},
+{
+"top": 709.9,
+"text": "Temp\u00e9rature de d\u00e9charge De - 30 \u00e0 60 \u00b0C",
+"words": [
+{
+"text": "Temp\u00e9rature",
+"x0": 30.0,
+"x1": 80.2
+},
+{
+"text": "de",
+"x0": 82.4,
+"x1": 92.2
+},
+{
+"text": "d\u00e9charge",
+"x0": 94.5,
+"x1": 130.8
+},
+{
+"text": "De",
+"x0": 207.3,
+"x1": 218.8
+},
+{
+"text": "-",
+"x0": 221.1,
+"x1": 224.4
+},
+{
+"text": "30",
+"x0": 226.7,
+"x1": 237.1
+},
+{
+"text": "\u00e0",
+"x0": 239.4,
+"x1": 243.9
+},
+{
+"text": "60",
+"x0": 246.2,
+"x1": 256.6
+},
+{
+"text": "\u00b0C",
+"x0": 258.9,
+"x1": 268.6
+}
+]
+},
+{
+"top": 738.4,
+"text": "Temp\u00e9rature de charge De 0 \u00e0 45 \u00b0C",
+"words": [
+{
+"text": "Temp\u00e9rature",
+"x0": 27.7,
+"x1": 77.8
+},
+{
+"text": "de",
+"x0": 80.0,
+"x1": 89.9
+},
+{
+"text": "charge",
+"x0": 92.1,
+"x1": 118.6
+},
+{
+"text": "De",
+"x0": 212.9,
+"x1": 224.5
+},
+{
+"text": "0",
+"x0": 226.7,
+"x1": 232.0
+},
+{
+"text": "\u00e0",
+"x0": 234.2,
+"x1": 238.7
+},
+{
+"text": "45",
+"x0": 241.0,
+"x1": 251.4
+},
+{
+"text": "\u00b0C",
+"x0": 253.7,
+"x1": 263.4
+}
+]
+}
+]
+}
+]

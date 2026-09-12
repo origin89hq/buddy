@@ -1,0 +1,4 @@
+Name,Manufacturer,Technology,Bifacial,STC,PTC,A_c,Length,Width,N_s,I_sc_ref,V_oc_ref,I_mp_ref,V_mp_ref,alpha_sc,beta_oc,T_NOCT,a_ref,I_L_ref,I_o_ref,R_s,R_sh_ref,Adjust,gamma_pmp,BIPV,Version,Date,,,
+Units,,,,,,m2,m,m,,A,V,A,V,A/K,V/K,C,V,A,A,Ohm,Ohm,%,%/K,,,,,,
+[0],lib_manufacturer,cec_material,lib_is_bifacial,,,cec_area,lib_length,lib_width,cec_n_s,cec_i_sc_ref,cec_v_oc_ref,cec_i_mp_ref,cec_v_mp_ref,cec_alpha_sc,cec_beta_oc,cec_t_noct,cec_a_ref,cec_i_l_ref,cec_i_o_ref,cec_r_s,cec_r_sh_ref,cec_adjust,cec_gamma_pmp,,,,,,
+Ablytek 6MN6A270,Ablytek,Mono-c-Si,0,270,242.1,1.6269,1.64,0.992,60,9.34,38.63,8.81,30.72,0.00486614,-0.12118231,47.4,1.5826946608006376,9.342590628411061,2.3387860831589717e-10,0.37508385762151936,1352.291897440361,12.009963538187574,-0.4509,N,2026.7.3,6/23/2026,,,
