@@ -15,3 +15,9 @@ Use the pinned Node and pnpm versions and `just`. `apps/buddy` owns the service,
 Deployment and reviewed catalogue publication are separate operations. See [DEPLOYMENT.md](apps/buddy/DEPLOYMENT.md) for direct Wrangler commands, private archives and optional manual workflows. No production secrets, photos, sessions or full manufacturer archives are included.
 
 See [LICENSING.md](LICENSING.md) for the current source and third-party terms.
+
+## npm releases
+
+Run `pnpm changeset` with each change that affects `@origin89/buddy` consumers. Include the release note and bump choice in the feature PR. The release workflow collects those notes into a version PR with `packages/buddy/CHANGELOG.md`. Review and merge that PR to publish through npm OIDC and create the GitHub release notes.
+
+See [the release guide](docs/releases.md) for package scope, validation, the initial npm release and recovery. The configured trusted-publisher filename remains `publish-buddy.yml`.
