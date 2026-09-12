@@ -14,7 +14,7 @@
   "dependencies": {
     "zod": "4.5.4"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "UNLICENSED",
   "description": "Origin89 Buddy schemas, installation state and local integration fixtures.",
   "files": [
