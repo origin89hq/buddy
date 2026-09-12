@@ -14,7 +14,7 @@ Only `@origin89/buddy` in `packages/buddy` is published. The root and applicatio
 
 The npm trusted publisher is GitHub organization `origin89hq`, repository `buddy`, workflow `publish-buddy.yml`, with no environment and direct publishing enabled. Only the publish job has OIDC permission; no npm token is stored in GitHub. Actions must be allowed to create pull requests.
 
-Release PRs created using `GITHUB_TOKEN` do not trigger PR workflows automatically. Run the `Checks` workflow manually on `changeset-release/main` and verify its required checks before merging. An organization GitHub App token can automate that later without changing npm authentication.
+Release PRs created using `GITHUB_TOKEN` create approval-gated PR workflows. Review the release diff, approve the pending `Checks` workflow on the PR, and verify all required checks before merging. A separate manual branch run does not clear that approval gate. An organization GitHub App token can automate this later without changing npm authentication.
 
 The existing `v0.1.0` GitHub release and npm `0.0.0` bootstrap remain intact. The initial patch note produces `0.1.1`, preserving the already released `0.1.0` version. New workspace release tags use `@origin89/buddy@<version>`. npm tarballs include the changelog. No extra binary or archive assets are attached to new GitHub releases.
 
