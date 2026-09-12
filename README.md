@@ -14,4 +14,4 @@ Use the pinned Node and pnpm versions and `just`. `apps/buddy` owns the service,
 
 Deployment and reviewed catalogue publication are separate operations. See [DEPLOYMENT.md](apps/buddy/DEPLOYMENT.md) for direct Wrangler commands, private archives and optional manual workflows. No production secrets, photos, sessions or full manufacturer archives are included.
 
-Source was extracted from `origin89hq/origin89` at `7dc27cd9e5f7f7ae67b519b037ca600265012d1e` without its private Git history. See [LICENSING.md](LICENSING.md) for the current source and third-party terms.
+See [LICENSING.md](LICENSING.md) for the current source and third-party terms.
