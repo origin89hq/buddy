@@ -14,11 +14,19 @@ just deploy
 
 The deploy recipe applies migrations, confirms every required catalogue has active verified records and deploys only Buddy. Website assets and hostnames are owned by the website repository. OpenAI-backed production configurations omit the optional Workers AI binding.
 
+## Deploy with GitHub Actions
+
+The `Checks` workflow deploys the current `main` commit after its checks pass. A manual run on `main` repeats those checks before deploying. PRs only run checks. Deployment uses the same migration and catalogue verification script as `just deploy`; runtime secrets remain on the Worker.
+
+Use the organization Actions secret `CLOUDFLARE_API_TOKEN`, with access granted to this repository. Set `CLOUDFLARE_ACCOUNT_ID`, `BUDDY_DATABASE_ID`, `BUDDY_PHOTOS_BUCKET` and `BUDDY_WORKER_NAME` as repository variables. Restrict the `buddy-production` environment to `main`. Remove any repository or environment copy of the token after organization access is verified; those copies override the shared value.
+
+Production deployment and catalogue publication share the `buddy-production` concurrency group. New pushes do not cancel a deployment in progress. Coordinate direct CLI operations separately.
+
 ## Optional catalogue workflow setup
 
-`Buddy catalogue` is a manual workflow on `main`. Configure `CLOUDFLARE_ACCOUNT_ID`, `BUDDY_DATABASE_ID`, `BUDDY_PHOTOS_BUCKET`, `BUDDY_WORKER_NAME` and `BUDDY_CATALOGUE_BUCKET` as repository variables. The `buddy-production` environment needs `CLOUDFLARE_API_TOKEN`; `buddy-catalogue-build` needs a read-only `CATALOGUE_READ_TOKEN` for the private source archive. Restrict both environments to `main`. Repository creation does not copy these secrets or environments.
+`Buddy catalogue` is a manual workflow on `main`. Configure `CLOUDFLARE_ACCOUNT_ID`, `BUDDY_DATABASE_ID`, `BUDDY_PHOTOS_BUCKET`, `BUDDY_WORKER_NAME` and `BUDDY_CATALOGUE_BUCKET` as repository variables. The `buddy-production` environment inherits the organization `CLOUDFLARE_API_TOKEN`; `buddy-catalogue-build` needs a read-only `CATALOGUE_READ_TOKEN` for the private source archive. Restrict both environments to `main`. Repository creation does not copy these secrets or environments.
 
-The workflow serializes catalogue publication within this repository. Coordinate direct CLI deployments and publications separately; do not run them against the same database concurrently. No deployment or paid inference runs on push.
+The workflow serializes catalogue publication within this repository. Coordinate direct CLI deployments and publications separately; do not run them against the same database concurrently. Catalogue publication remains manual; deployment does not run paid inference.
 
 ## Archive reviewed sources
 
