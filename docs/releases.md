@@ -2,7 +2,7 @@
 
 Use Changesets to collect reviewed release notes and explicit version bumps. Each feature PR that affects consumers includes a note from `pnpm changeset`. Docs, tests and internal tooling changes that do not affect the package need no release note.
 
-The `publish-buddy.yml` workflow runs on `main` pushes and can be run manually on `main`. With pending changesets it opens or updates `changeset-release/main`, applying versions, updating the lockfile and generating `packages/buddy/CHANGELOG.md`. Merging that release PR lets the workflow build, validate, pack and publish the released version through npm OIDC. GitHub release notes come from the changelog. Do not push release tags manually.
+The `publish-buddy.yml` workflow runs on `main` pushes and can be run manually on `main`. With pending changesets it opens or updates `changeset-release/main`, applying versions, updating the lockfile and generating `packages/buddy/CHANGELOG.md`. Merging that release PR lets the workflow build, validate, pack and publish the released version through npm OIDC. GitHub release notes come from the changelog. Do not push release tags manually. This workflow accepts stable versions only; prereleases are rejected before a publish plan is created.
 
 ## Package and commands
 
