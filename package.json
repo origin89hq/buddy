@@ -10,10 +10,14 @@
     "buddy:test": "pnpm --filter @origin89/buddy test && pnpm --filter origin89-buddy test",
     "buddy:eval:dev": "pnpm --filter origin89-buddy eval:dev",
     "buddy:dev": "pnpm --filter origin89-buddy dev",
-    "buddy:check": "pnpm --filter origin89-buddy check"
+    "buddy:check": "pnpm --filter origin89-buddy check",
+    "changeset": "changeset",
+    "release:version": "changeset version && pnpm install --lockfile-only --ignore-scripts && pnpm check",
+    "release:publish": "changeset publish"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.13"
+    "@biomejs/biome": "2.5.13",
+    "@changesets/cli": "3.0.2"
   },
   "license": "UNLICENSED"
 }

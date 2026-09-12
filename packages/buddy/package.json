@@ -20,7 +20,8 @@
   "files": [
     "dist",
     "fixture",
-    "LICENSING.md"
+    "LICENSING.md",
+    "CHANGELOG.md"
   ],
   "repository": {
     "type": "git",
