@@ -1,0 +1,39 @@
+name: publish-buddy
+on:
+  push:
+    tags: ['buddy-v*']
+permissions:
+  contents: read
+concurrency:
+  group: publish-buddy
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Check the release tag
+        run: |
+          version=$(node -p "require('./packages/buddy/package.json').version")
+          test "$GITHUB_REF_NAME" = "buddy-v$version" || { echo 'The tag must match the package version.'; exit 1; }
+          git merge-base --is-ancestor "$GITHUB_SHA" origin/main
+      - uses: ./.github/actions/setup-node
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version-file: .node-version
+          registry-url: https://registry.npmjs.org
+          package-manager-cache: false
+      - run: pnpm check
+      - run: pnpm run package
+      - run: git diff --exit-code
+      - name: Publish @origin89/buddy
+        run: |
+          version=$(node -p "require('./packages/buddy/package.json').version")
+          npm publish "dist/origin89-buddy-$version.tgz" --provenance --access public
