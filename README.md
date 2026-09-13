@@ -1,5 +1,7 @@
 # Origin89 Buddy
 
+![Origin89 Buddy answering questions from a blue chat bubble](https://raw.githubusercontent.com/origin89hq/brand/37fc8da9fabddab6627d2276aa5f80af13380fdc/situations/scenes/buddy-chat/buddy-social.jpg)
+
 Equipment setup and assistance for Origin89: the Cloudflare service, shared TypeScript contracts, reviewed knowledge adapters and evaluation harness. The public web experience lives in [website](https://github.com/origin89hq/website); shared interface components live in [ui](https://github.com/origin89hq/ui).
 
 ```sh
