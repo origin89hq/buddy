@@ -3,6 +3,7 @@ import { cp, mkdir, readFile, writeFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 
 const root = new URL("../", import.meta.url);
+execFileSync("pnpm", ["--filter", "@origin89/buddy", "build"], { cwd: root, stdio: "inherit" });
 const require = createRequire(new URL("apps/buddy/package.json", root));
 const { parse } = require("jsonc-parser");
 const fixture = new URL("packages/buddy/fixture/", root);
@@ -56,3 +57,14 @@ execFileSync("pnpm", ["--filter", "@origin89/buddy", "pack", "--pack-destination
   cwd: root,
   stdio: "inherit",
 });
+const { version } = JSON.parse(
+  await readFile(new URL("packages/buddy/package.json", root), "utf8"),
+);
+execFileSync(
+  process.execPath,
+  ["scripts/check-package.mjs", `dist/origin89-buddy-${version}.tgz`],
+  {
+    cwd: root,
+    stdio: "inherit",
+  },
+);

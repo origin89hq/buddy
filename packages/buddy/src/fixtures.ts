@@ -1,4 +1,4 @@
-import type { Extraction } from "./index.ts";
+import type { Extraction } from "./index.js";
 
 // Hand-authored observations for offline UI/tests. These are never selected by filename or passed off as inference.
 const entry = (
