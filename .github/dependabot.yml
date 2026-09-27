@@ -10,7 +10,7 @@ updates:
     schedule:
       interval: weekly
     cooldown:
-      default-days: 3 # zizmor: ignore[dependabot-cooldown] Origin89 policy is 3 days
+      default-days: 7
     groups:
       actions:
         patterns: ["*"]
@@ -25,7 +25,7 @@ updates:
       interval: weekly
     # At least pnpm's minimumReleaseAge, or the frozen install rejects the update.
     cooldown:
-      default-days: 3 # zizmor: ignore[dependabot-cooldown] Origin89 policy is 3 days
+      default-days: 7
     groups:
       npm:
         patterns: ["*"]
@@ -39,7 +39,7 @@ updates:
     schedule:
       interval: weekly
     cooldown:
-      default-days: 3 # zizmor: ignore[dependabot-cooldown] Origin89 policy is 3 days
+      default-days: 7
     groups:
       pip:
         patterns: ["*"]
