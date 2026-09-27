@@ -1,0 +1,49 @@
+# See origin89hq/engineering docs/dependencies.md.
+version: 2
+
+updates:
+  # Composite actions are not scanned from the root directory.
+  - package-ecosystem: github-actions
+    directories:
+      - /
+      - /.github/actions/setup-node
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    groups:
+      actions:
+        patterns: ["*"]
+        update-types: [minor, patch]
+    commit-message:
+      prefix: ci
+
+  # pnpm workspaces use the npm ecosystem from the directory holding the lockfile.
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    # At least pnpm's minimumReleaseAge, or the frozen install rejects the update.
+    cooldown:
+      default-days: 7
+    groups:
+      npm:
+        patterns: ["*"]
+        update-types: [minor, patch]
+    commit-message:
+      prefix: chore
+      include: scope
+
+  - package-ecosystem: pip
+    directory: /apps/buddy/scripts
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    groups:
+      pip:
+        patterns: ["*"]
+        update-types: [minor, patch]
+    commit-message:
+      prefix: chore
+      include: scope
